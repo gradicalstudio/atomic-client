@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./scripts";
-import "./styles";
+// import "./styles";
+import "./css/atomic-d10870.webflow.css";
+import "./css/normalize.css";
+import "./css/webflow.css";
+
 import IndexView from "./views/IndexView";
 import reportWebVitals from "./reportWebVitals";
 

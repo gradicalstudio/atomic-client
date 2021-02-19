@@ -59,8 +59,18 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(rgba(0, 0, 0, 0.14)));
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.14)),
+    to(rgba(0, 0, 0, 0.14))
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.14),
+    rgba(0, 0, 0, 0.14)
+  );
   font-family: Vollkorn, serif;
 }
 
@@ -172,7 +182,7 @@
   margin-bottom: 0px;
   padding-top: 1%;
   padding-bottom: 5%;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 2vw;
   line-height: 1.2em;
@@ -182,7 +192,7 @@
 
 .nav-link {
   z-index: 122;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 1.3vw;
   line-height: 1em;
@@ -208,7 +218,7 @@
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
 }
 
 .heading-2 {
@@ -453,7 +463,7 @@
   margin-top: 40px;
   margin-bottom: 35px;
   padding-right: 114px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   font-size: 1.5vw;
   line-height: 1.2em;
   font-weight: 400;
@@ -487,7 +497,7 @@
 
 .heading-13 {
   margin-left: 208px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 2vw;
   line-height: 1.2em;
@@ -595,7 +605,7 @@
   margin-bottom: 60px;
   padding-right: 38px;
   padding-left: 38px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 1.6vw;
   line-height: 1.2em;
@@ -604,7 +614,7 @@
 }
 
 .heading-15 {
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   font-weight: 300;
 }
 
@@ -705,7 +715,7 @@
 .text-block-14 {
   padding-right: 0px;
   padding-left: 22px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 4.2vw;
   line-height: 1em;
@@ -714,7 +724,7 @@
 .text-block-14.workspace {
   padding: 0px 22px 0px 0px;
   border-radius: 0px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #000;
   font-size: 4.2vw;
   cursor: pointer;
@@ -732,7 +742,7 @@
 .text-block-14.community {
   padding-right: 22px;
   padding-left: 0px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 4.2vw;
   line-height: 1em;
@@ -742,7 +752,7 @@
 .text-block-14.events {
   padding-right: 22px;
   padding-left: 0px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 4.2vw;
   line-height: 1em;
@@ -751,7 +761,7 @@
 .text-block-14.innovation {
   padding-right: 22px;
   padding-left: 0px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 4.2vw;
   line-height: 1em;
@@ -778,7 +788,7 @@
 .paragraph-1.title {
   margin-left: 107px;
   padding: 0px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 1.6vw;
   line-height: 1.2em;
@@ -787,7 +797,7 @@
 .para-2 {
   margin-left: 107px;
   padding-top: 39px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 1.6vw;
   line-height: 1.2em;
@@ -945,7 +955,7 @@
   max-width: none;
   margin-left: 0px;
   padding-left: 0px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 1vw;
   line-height: 1em;
@@ -1076,13 +1086,13 @@
 
 .text-block-17 {
   margin-top: 12px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-weight: 100;
 }
 
 .text-block-17.footer {
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 1.4vw;
   line-height: 1em;
@@ -1150,7 +1160,7 @@
   margin-right: 0px;
   padding: 32px 12px;
   opacity: 1;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   font-size: 1.3vw;
   line-height: 1em;
   font-weight: 500;
@@ -1199,7 +1209,7 @@
   border-color: #fff;
   border-radius: 50px;
   background-color: transparent;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
 }
 
@@ -1212,7 +1222,7 @@
 .text-block-18 {
   margin-top: 41px;
   opacity: 1;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 1.4vw;
   text-align: center;
@@ -1306,7 +1316,7 @@
 }
 
 .tab-text.menu-text {
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #000;
   font-size: 1.2vw;
   line-height: 1em;
@@ -1384,7 +1394,7 @@
   margin-top: 40px;
   margin-bottom: 34px;
   padding-right: 92px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 1.5vw;
   line-height: 1.2em;
@@ -1917,7 +1927,7 @@
   -webkit-transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 1.5vw;
   line-height: 1.2em;
@@ -2240,7 +2250,7 @@
 
 .text-block-19 {
   margin-top: 34px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #0f0e0c;
   font-size: 1.2vw;
   line-height: 1.2em;
@@ -2252,7 +2262,7 @@
 
 .text-block-20 {
   margin-top: 21px;
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 1.15vw;
   line-height: 1em;
@@ -2546,7 +2556,7 @@
 }
 
 .text-span-4 {
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
 }
 
 .section-21 {
@@ -2617,7 +2627,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/Rectangle-46.svg');
+  background-image: url("../images/Rectangle-46.svg");
   background-position: 50% 50%;
   background-size: auto;
 }
@@ -2755,7 +2765,7 @@
   height: 600px;
   padding-right: 0px;
   padding-left: 0px;
-  background-image: url('../images/Private-office_2.jpg');
+  background-image: url("../images/Private-office_2.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2853,18 +2863,18 @@
 }
 
 .text-block-21 {
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   color: #fff;
   font-size: 1.2vw;
 }
 
 .text-block-22 {
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   font-size: 1.2vw;
 }
 
 .text-block-23 {
-  font-family: 'Scto grotesk b', sans-serif;
+  font-family: "Scto grotesk b", sans-serif;
   font-size: 1.2vw;
 }
 
@@ -2936,8 +2946,16 @@
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url('../images/Rooftop-cafe-1.jpg');
-    background-image: linear-gradient(180deg, transparent, transparent), url('../images/Rooftop-cafe-1.jpg');
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(transparent),
+        to(transparent)
+      ),
+      url("../images/Rooftop-cafe-1.jpg");
+    background-image: linear-gradient(180deg, transparent, transparent),
+      url("../images/Rooftop-cafe-1.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -3007,7 +3025,7 @@
   .nav-link {
     padding-right: 24px;
     padding-left: 24px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 1.3vw;
     line-height: 1em;
   }
@@ -3071,7 +3089,7 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 1.6em;
     line-height: 1.2em;
@@ -3285,7 +3303,7 @@
     display: flex;
     width: 50%;
     padding: 93px;
-    background-image: url('../images/Hot-desk-ad-phone-booth.jpg');
+    background-image: url("../images/Hot-desk-ad-phone-booth.jpg");
     background-position: 50% 50%;
     background-size: cover;
   }
@@ -3317,7 +3335,7 @@
     flex: 1;
     border-radius: 100px;
     background-color: transparent;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -3325,7 +3343,7 @@
 
   .heading-6 {
     margin: 53px 0px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 24px;
     line-height: 28px;
     font-weight: 400;
@@ -3344,7 +3362,7 @@
     border: 2px solid #000;
     border-radius: 100px;
     background-color: transparent;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
   }
 
@@ -3358,7 +3376,7 @@
   }
 
   .link {
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #9d9d9d;
     line-height: 140px;
     font-weight: 400;
@@ -3427,7 +3445,7 @@
     min-width: auto;
     margin: 40px 0px 10px;
     padding: 0px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     line-height: 28px;
     font-weight: 300;
@@ -3464,7 +3482,7 @@
 
   .icon-text {
     padding: 15px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-size: 14px;
     text-align: center;
@@ -3712,7 +3730,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     padding-right: 161px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #000;
     font-size: 1.8vw;
     line-height: 1.2em;
@@ -3728,7 +3746,7 @@
     border-color: #0f0e0c;
     border-radius: 100px;
     background-color: transparent;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #000;
     font-weight: 700;
   }
@@ -3867,7 +3885,7 @@
     margin-bottom: 0px;
     margin-left: 0px;
     padding: 0px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-size: 2vw;
     line-height: 1.2em;
@@ -4019,7 +4037,7 @@
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 20px;
   }
 
@@ -4203,7 +4221,7 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-size: 1.6vw;
     line-height: 1.2em;
@@ -4220,7 +4238,7 @@
     border: 2px solid #000;
     border-radius: 35px;
     background-color: rgba(255, 255, 255, 0);
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 14px;
     font-weight: 700;
@@ -4228,7 +4246,7 @@
 
   .text-block-12 {
     padding-bottom: 0px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 1.1em;
     letter-spacing: 0.5px;
@@ -4296,7 +4314,7 @@
   }
 
   .heading-15 {
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 1.6vw;
     line-height: 1.1em;
     font-weight: 300;
@@ -4337,7 +4355,7 @@
     border-color: #fff;
     border-radius: 100px;
     background-color: transparent;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-weight: 700;
   }
 
@@ -4627,7 +4645,7 @@
     padding: 18px 0px 18px 28px;
     border: 0px solid #000;
     background-color: transparent;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 4.2vw;
     font-weight: 500;
@@ -4665,7 +4683,7 @@
   .text-block-15 {
     padding-top: 18px;
     padding-bottom: 18px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 64px;
     font-weight: 500;
   }
@@ -4682,7 +4700,7 @@
     border: 1px solid #000;
     border-radius: 100px;
     background-color: #3746ff;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-weight: 700;
   }
 
@@ -4726,7 +4744,7 @@
   .paragraph-1 {
     min-width: auto;
     margin-bottom: 0px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 1.6vw;
     line-height: 1em;
     font-weight: 300;
@@ -4757,7 +4775,7 @@
     margin-bottom: 0px;
     margin-left: 150px;
     padding-top: 55px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 1.8vw;
     line-height: 1.2em;
     font-weight: 300;
@@ -4765,7 +4783,8 @@
 
   .grid-11 {
     grid-column-gap: 16px;
-    grid-template-areas: "Area Area-2 Area-3 Area-4"
+    grid-template-areas:
+      "Area Area-2 Area-3 Area-4"
       ". Area-5 Area-6 Area-7";
     -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -4775,7 +4794,8 @@
     max-width: none;
     grid-column-gap: 72px;
     grid-row-gap: 65px;
-    grid-template-areas: "Area Area-2 Area-3 Area-4"
+    grid-template-areas:
+      "Area Area-2 Area-3 Area-4"
       "Area-5 Area-6 Area-7 Area-8";
     -ms-grid-columns: 1fr 72px 1fr 72px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -4827,7 +4847,7 @@
   .button-7 {
     padding: 2px;
     background-color: transparent;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 1.15vw;
     line-height: 20px;
     font-weight: 300;
@@ -5103,7 +5123,7 @@
     border: 2px solid #000;
     border-radius: 50px;
     background-color: transparent;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-weight: 500;
   }
@@ -5150,7 +5170,7 @@
   .text-block-16 {
     margin-left: 0px;
     padding-right: 0px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 1.3vw;
     line-height: 1em;
     font-weight: 500;
@@ -5304,7 +5324,7 @@
 
   .text-block-17 {
     margin-top: 12px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-weight: 100;
   }
@@ -5370,7 +5390,7 @@
     margin-bottom: 14px;
     padding: 32px 0px 32px 12px;
     border: 2px solid #000;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 1.3vw;
     line-height: 1em;
@@ -5423,7 +5443,7 @@
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 1vw;
     line-height: 1em;
@@ -5461,7 +5481,7 @@
     border: 2px solid #000;
     border-radius: 50px;
     background-color: #3746ff;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-size: 1.7vw;
     font-weight: 500;
@@ -5469,7 +5489,7 @@
 
   .text-block-18 {
     margin-top: 70px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-size: 1.4vw;
     line-height: 19px;
@@ -5531,7 +5551,7 @@
   }
 
   .tab-text.menu-text {
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-size: 1.2vw;
     line-height: 1em;
@@ -5591,7 +5611,7 @@
   }
 
   .paragraph-3 {
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 1.5vw;
   }
@@ -5898,7 +5918,7 @@
   }
 
   .paragraph-4 {
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 1.5vw;
     font-weight: 400;
@@ -6529,7 +6549,7 @@
 
   .text-block-19 {
     margin-top: 57px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #0f0e0c;
     font-size: 1.5vw;
     line-height: 1em;
@@ -6543,7 +6563,7 @@
 
   .text-block-20 {
     margin-top: 29px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
     font-size: 1.15vw;
     line-height: 1em;
@@ -6620,7 +6640,7 @@
   .hero-sub-text-2 {
     border-width: 0px 0px 1px;
     border-color: #fff;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     color: #fff;
   }
 
@@ -7239,7 +7259,7 @@
   .text-block-19 {
     margin-top: 15px;
     padding-right: 113px;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 1.4vw;
     line-height: 1em;
   }
@@ -7690,7 +7710,8 @@
     padding-top: 22px;
     grid-column-gap: 46px;
     grid-row-gap: 44px;
-    grid-template-areas: "Area Area-2"
+    grid-template-areas:
+      "Area Area-2"
       "Area-3 Area-4"
       "Area-5 Area-6"
       "Area-7 Area-8";
@@ -8266,7 +8287,7 @@
     order: 1;
     border-radius: 50px;
     background-color: #3746ff;
-    font-family: 'Scto grotesk b', sans-serif;
+    font-family: "Scto grotesk b", sans-serif;
     font-size: 2vw;
     line-height: 2em;
     font-weight: 500;
@@ -9343,7 +9364,7 @@
   justify-self: start;
 }
 
-.grid-16>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+.grid-16 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
@@ -9358,7 +9379,7 @@
   justify-self: start;
 }
 
-.grid-16>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+.grid-16 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
 }
@@ -9391,7 +9412,7 @@
   justify-self: start;
 }
 
-.grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+.grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
@@ -9406,7 +9427,7 @@
   justify-self: start;
 }
 
-.grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+.grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
 }
@@ -9422,7 +9443,7 @@
     align-self: auto;
   }
 
-  .grid-16>#w-node-div-block-31-5cad7c33 {
+  .grid-16 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
@@ -9437,7 +9458,7 @@
     grid-area: Area-2;
   }
 
-  .grid-16>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-16 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
@@ -9500,7 +9521,7 @@
     align-self: center;
   }
 
-  .grid-16>#w-node-div-block-38-5cad7c33 {
+  .grid-16 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
@@ -9515,7 +9536,7 @@
     grid-area: Area-2;
   }
 
-  .grid-16>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-16 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
@@ -9546,7 +9567,7 @@
     align-self: center;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
@@ -9561,7 +9582,7 @@
     grid-area: Area-2;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
@@ -9584,7 +9605,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .grid-3>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-3 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -9594,47 +9615,47 @@
     -ms-grid-column: 1;
   }
 
-  .grid-6>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-6 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-7>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-7 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-9>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-9 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-11>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-11 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-12 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-14>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-14 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-15>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-15 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-16>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-16 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-3>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-3 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -9644,47 +9665,47 @@
     -ms-grid-column: 3;
   }
 
-  .grid-6>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-6 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-7>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-7 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-9>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-9 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-11>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-11 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-12 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-14>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-14 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-15>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-15 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-16>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-16 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-3>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-3 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -9694,47 +9715,47 @@
     -ms-grid-column: 1;
   }
 
-  .grid-6>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-6 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-7>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-7 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-9>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-9 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-11>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-11 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-14>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-14 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-15>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-15 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-3>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-3 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -9744,47 +9765,47 @@
     -ms-grid-column: 3;
   }
 
-  .grid-6>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-6 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-7>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-7 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-9>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-9 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-11>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-11 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-14>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-14 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-15>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-15 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-3>#w-node-div-block-31-5cad7c33 {
+  .grid-3 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -9794,47 +9815,47 @@
     -ms-grid-column: 1;
   }
 
-  .grid-6>#w-node-div-block-31-5cad7c33 {
+  .grid-6 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-7>#w-node-div-block-31-5cad7c33 {
+  .grid-7 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-9>#w-node-div-block-31-5cad7c33 {
+  .grid-9 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-11>#w-node-div-block-31-5cad7c33 {
+  .grid-11 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-div-block-31-5cad7c33 {
+  .grid-12 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-14>#w-node-div-block-31-5cad7c33 {
+  .grid-14 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-15>#w-node-div-block-31-5cad7c33 {
+  .grid-15 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-16>#w-node-div-block-31-5cad7c33 {
+  .grid-16 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-3>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-3 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -9844,42 +9865,42 @@
     -ms-grid-column: 3;
   }
 
-  .grid-6>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-6 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-7>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-7 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-9>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-9 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-11>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-11 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-12 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-14>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-14 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-15>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-15 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-16>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-16 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -9889,27 +9910,27 @@
     -ms-grid-column: 5;
   }
 
-  .grid-9>#w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
+  .grid-9 > #w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-11>#w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
+  .grid-11 > #w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-12>#w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
+  .grid-12 > #w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-14>#w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
+  .grid-14 > #w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-15>#w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
+  .grid-15 > #w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
@@ -9924,12 +9945,12 @@
     -ms-grid-column: 7;
   }
 
-  .grid-12>#w-node-be124558-b3b9-307a-efc2-f4c13295f70b-5cad7c33 {
+  .grid-12 > #w-node-be124558-b3b9-307a-efc2-f4c13295f70b-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 
-  .grid-14>#w-node-be124558-b3b9-307a-efc2-f4c13295f70b-5cad7c33 {
+  .grid-14 > #w-node-be124558-b3b9-307a-efc2-f4c13295f70b-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
@@ -9944,7 +9965,7 @@
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_4cc2958b-b449-1149-cc32-354b42eb88ae-5cad7c33 {
+  .grid-12 > #w-node-_4cc2958b-b449-1149-cc32-354b42eb88ae-5cad7c33 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
@@ -9954,7 +9975,7 @@
     -ms-grid-column: 5;
   }
 
-  .grid-12>#w-node-d3cd41a1-8e62-806f-8348-213e94d0a184-5cad7c33 {
+  .grid-12 > #w-node-d3cd41a1-8e62-806f-8348-213e94d0a184-5cad7c33 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
@@ -9964,7 +9985,7 @@
     -ms-grid-column: 7;
   }
 
-  .grid-12>#w-node-_7992f296-1e7c-684f-d0f1-a5af49de2839-5cad7c33 {
+  .grid-12 > #w-node-_7992f296-1e7c-684f-d0f1-a5af49de2839-5cad7c33 {
     -ms-grid-row: 3;
     -ms-grid-column: 5;
   }
@@ -9974,7 +9995,7 @@
     -ms-grid-column: 7;
   }
 
-  .grid-3>#w-node-div-block-38-5cad7c33 {
+  .grid-3 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -9984,47 +10005,47 @@
     -ms-grid-column: 1;
   }
 
-  .grid-6>#w-node-div-block-38-5cad7c33 {
+  .grid-6 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-7>#w-node-div-block-38-5cad7c33 {
+  .grid-7 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-9>#w-node-div-block-38-5cad7c33 {
+  .grid-9 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-11>#w-node-div-block-38-5cad7c33 {
+  .grid-11 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-div-block-38-5cad7c33 {
+  .grid-12 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-14>#w-node-div-block-38-5cad7c33 {
+  .grid-14 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-15>#w-node-div-block-38-5cad7c33 {
+  .grid-15 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-16>#w-node-div-block-38-5cad7c33 {
+  .grid-16 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-3>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-3 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -10034,42 +10055,42 @@
     -ms-grid-column: 3;
   }
 
-  .grid-6>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-6 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-7>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-7 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-9>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-9 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-11>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-11 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-12 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-14>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-14 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-15>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-15 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-16>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-16 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -10079,27 +10100,27 @@
     -ms-grid-column: 5;
   }
 
-  .grid-9>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-9 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-11>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-11 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-12>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-12 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-14>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-14 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-15>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-15 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
@@ -10114,12 +10135,12 @@
     -ms-grid-column: 7;
   }
 
-  .grid-12>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-12 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 
-  .grid-14>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-14 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
@@ -10129,7 +10150,7 @@
     -ms-grid-column: 4;
   }
 
-  .grid-3>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-3 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -10139,47 +10160,47 @@
     -ms-grid-column: 1;
   }
 
-  .grid-6>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-6 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-7>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-7 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-9>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-9 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-11>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-11 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-14>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-14 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-15>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-15 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-3>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-3 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -10189,42 +10210,42 @@
     -ms-grid-column: 3;
   }
 
-  .grid-6>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-6 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-7>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-7 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  .grid-9>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-9 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-11>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-11 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-14>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-14 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-15>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-15 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
@@ -10234,27 +10255,27 @@
     -ms-grid-column: 5;
   }
 
-  .grid-9>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-9 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-11>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-11 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-14>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-14 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-15>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-15 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
@@ -10269,12 +10290,12 @@
     -ms-grid-column: 7;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 
-  .grid-14>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-14 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
@@ -10286,246 +10307,246 @@
 }
 
 @media screen and (max-width: 991px) {
-  .grid-16>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-16 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-16>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-16 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 
-  .grid-16>#w-node-div-block-31-5cad7c33 {
+  .grid-16 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-16>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-16 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 
-  .grid-16>#w-node-div-block-38-5cad7c33 {
+  .grid-16 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-16>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
+  .grid-16 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .grid-16>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-16 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 7;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .grid-12>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
+  .grid-12 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+  .grid-12 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-div-block-31-5cad7c33 {
+  .grid-12 > #w-node-div-block-31-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
+  .grid-12 > #w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
+  .grid-12 > #w-node-c91c9680-fed5-08cb-995e-00d5d0876d81-5cad7c33 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-be124558-b3b9-307a-efc2-f4c13295f70b-5cad7c33 {
+  .grid-12 > #w-node-be124558-b3b9-307a-efc2-f4c13295f70b-5cad7c33 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_4cc2958b-b449-1149-cc32-354b42eb88ae-5cad7c33 {
+  .grid-12 > #w-node-_4cc2958b-b449-1149-cc32-354b42eb88ae-5cad7c33 {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-d3cd41a1-8e62-806f-8348-213e94d0a184-5cad7c33 {
+  .grid-12 > #w-node-d3cd41a1-8e62-806f-8348-213e94d0a184-5cad7c33 {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_7992f296-1e7c-684f-d0f1-a5af49de2839-5cad7c33 {
+  .grid-12 > #w-node-_7992f296-1e7c-684f-d0f1-a5af49de2839-5cad7c33 {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-dccd72d3-bed8-ec68-109b-b5b39734ebc1-5cad7c33 {
+  .grid-12 > #w-node-dccd72d3-bed8-ec68-109b-b5b39734ebc1-5cad7c33 {
     -ms-grid-row: 7;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-div-block-38-5cad7c33 {
+  .grid-12 > #w-node-div-block-38-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  .grid-12>#w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  .grid-12>#w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-  }
-
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+  .grid-12 > #w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+  .grid-12 > #w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 
-  .grid-12>#w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
+  .grid-12 > #w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .grid-12 > #w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
 }
 
 @font-face {
-  font-family: 'Clearface';
-  src: url('../fonts/Clearface-Bold.otf') format('opentype');
+  font-family: "Clearface";
+  src: url("../fonts/Clearface-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Black-Italic.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Black-Italic.otf") format("opentype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Bold.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Black.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Bold-Italic.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  /* src: url("../fonts/Scto-Grotesk-B-Bold-Italic.otf") format("opentype"); */
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Light-Italic.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Light-Italic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Light.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Medium-Italic.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Medium-Italic.otf") format("opentype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Medium.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Regular.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Thin.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Thin-Italic.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Thin-Italic.otf") format("opentype");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Scto grotesk b';
-  src: url('../fonts/Scto-Grotesk-B-Regular-Italic.otf') format('opentype');
+  font-family: "Scto grotesk b";
+  src: url("../fonts/Scto-Grotesk-B-Regular-Italic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;

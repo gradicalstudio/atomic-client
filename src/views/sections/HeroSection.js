@@ -1,17 +1,17 @@
 import React from "react";
 import BackgroundSlider from "react-background-slider";
+import LoadingSkeleton from "../../components/LoadingSkeleton";
 
-const HeroSection = () => {
+const HeroSection = ({ loading, data }) => {
   return (
     <div>
       <BackgroundSlider
-        images={[
-          "https://homepages.cae.wisc.edu/~ece533/images/airplane.png",
-          "https://homepages.cae.wisc.edu/~ece533/images/peppers.png",
-          "https://homepages.cae.wisc.edu/~ece533/images/serrano.png",
-          "https://homepages.cae.wisc.edu/~ece533/images/sails.png",
-        ]}
-        duration={0.1}
+        images={
+          !loading && data
+            ? data.images
+            : ["https://homepages.cae.wisc.edu/~ece533/images/sails.png"]
+        }
+        duration={1.2}
         transition={2}
       />
       <div>
@@ -84,9 +84,9 @@ const HeroSection = () => {
             </a>
           </div>
           <h2 data-w-id="Heading" className="af-class-hero-sub-text">
-            Workspaces that spark exponential growth.
-            <br />
-            Designed for today’s creative, mobile and entrepreneurial minds.
+            {!loading && data ? data.heroSubTitle : <LoadingSkeleton />}
+            {/* <br />
+            Designed for today’s creative, mobile and entrepreneurial minds. */}
           </h2>
           <a href="#About" className="af-class-scroll-button w-inline-block">
             <img

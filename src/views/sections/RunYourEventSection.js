@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import LoadingSkeleton from "../../components/LoadingSkeleton";
 
-export default function RunYourEventSection() {
+export default function RunYourEventSection({ loading, data }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   return (
     <div className="af-class-section-5">
       <div data-w-id="Row 2" className="af-class-columns-3 w-row">
@@ -19,7 +21,7 @@ export default function RunYourEventSection() {
             }}
             className="af-class-heading-16 af-class-diff af-class-run-your-event"
           >
-            Run your event, the way you’d want it.
+            {!loading && data ? data.heading : <LoadingSkeleton />}
           </h1>
           <h4
             style={{
@@ -35,12 +37,10 @@ export default function RunYourEventSection() {
             }}
             className="af-class-heading-11"
           >
-            The Atomic’s event spaces are open to public bookings throughout the
-            year. Anything from board meetings to seminars to get-togethers can
-            be organised conveniently. <br />
+            {!loading && data ? data.paragraphs[0] : <LoadingSkeleton />}
             <br />
-            Rates vary with the type of event, tell us what you have planned and
-            we’ll make it work.
+            <br />
+            {!loading && data ? data.paragraphs[1] : <LoadingSkeleton />}
           </h4>
           <a
             href="#book-a-tour"
@@ -96,7 +96,13 @@ export default function RunYourEventSection() {
             }}
             className="af-class-container-17 w-container"
           >
-            <div
+            <button
+              onClick={() => {
+                console.log(currentImageIndex);
+                if (currentImageIndex < data.images.length - 1) {
+                  setCurrentImageIndex(currentImageIndex + 1);
+                }
+              }}
               data-w-id="7908f217-5ab8-d52b-70eb-9d8c729443cb"
               style={{ backgroundColor: "rgb(255,255,255)" }}
               className="af-class-div-block-54 af-class-right"
@@ -116,8 +122,15 @@ export default function RunYourEventSection() {
                 alt=""
                 className="af-class-arrow-slider"
               />
-            </div>
-            <div className="af-class-div-block-54 af-class-left">
+            </button>
+            <button
+              onClick={() => {
+                if (currentImageIndex > 0) {
+                  setCurrentImageIndex(currentImageIndex - 1);
+                }
+              }}
+              className="af-class-div-block-54 af-class-left"
+            >
               <img
                 src="images/left.svg"
                 loading="lazy"
@@ -125,10 +138,16 @@ export default function RunYourEventSection() {
                 alt=""
                 className="af-class-image-57"
               />
-            </div>
+            </button>
             <img
-              src="images/image-2.svg"
+              src={
+                !loading && data
+                  ? data.images[currentImageIndex]
+                  : "images/image-2.svg"
+              }
               loading="lazy"
+              height={450}
+              width={500}
               alt=""
               className="af-class-image-56 af-class-top"
             />
@@ -140,8 +159,14 @@ export default function RunYourEventSection() {
               className="af-class-image-64"
             />
             <img
-              src="images/image-2.svg"
+              src={
+                !loading && data
+                  ? data.images[currentImageIndex]
+                  : "images/image-2.svg"
+              }
               loading="lazy"
+              height={450}
+              width={500}
               alt=""
               className="af-class-image-56 af-class-bottom"
             />

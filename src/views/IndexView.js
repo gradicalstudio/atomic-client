@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AtomicMainPage from "./AtomicMainPage";
 
 const scripts = [
@@ -27,32 +27,32 @@ const scripts = [
   },
 ];
 
-let Controller;
+// let Controller;
 
-class IndexView extends React.Component {
-  static get Controller() {
-    Controller = IndexView;
+const IndexView = () => {
+  // static get Controller() {
+  //   Controller = IndexView;
 
-    return Controller;
-    // if (Controller) return Controller;
+  //   return Controller;
+  //   // if (Controller) return Controller;
 
-    // try {
-    //   Controller = require("../controllers/IndexController");
-    //   Controller = Controller.default || Controller;
+  //   // try {
+  //   //   Controller = require("../controllers/IndexController");
+  //   //   Controller = Controller.default || Controller;
 
-    //   return Controller;
-    // } catch (e) {
-    //   if (e.code == "MODULE_NOT_FOUND") {
-    //     Controller = IndexView;
+  //   //   return Controller;
+  //   // } catch (e) {
+  //   //   if (e.code == "MODULE_NOT_FOUND") {
+  //   //     Controller = IndexView;
 
-    //     return Controller;
-    //   }
+  //   //     return Controller;
+  //   //   }
 
-    //   throw e;
-    // }
-  }
+  //   //   throw e;
+  //   // }
+  // }
 
-  componentDidMount() {
+  useEffect(() => {
     const htmlEl = document.querySelector("html");
     htmlEl.dataset["wfPage"] = "6024d30efc3d966f5cad7c33";
     htmlEl.dataset["wfSite"] = "6024d30efc3d96e8efad7c32";
@@ -72,52 +72,44 @@ class IndexView extends React.Component {
         return active.isAsync ? next : loading;
       })
     );
-  }
+  }, []);
 
-  render() {
-    // const proxies =
-    //   IndexView.Controller !== IndexView
-    //     ? transformProxies(this.props.children)
-    //     : {};
-
-    return (
-      <span>
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
+  return (
+    <span>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
           @import url(../css/normalize.css);
           @import url(../css/webflow.css);
           @import url(../css/atomic-d10870.webflow.css);
 
-          @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id=\"Div Block 46\"] {display:flex;-webkit-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"Div Block\"] {-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"TextBlock 5\"] {color:rgb(15,14,12);}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"b484cb5e-26ef-bfdc-5554-c3090bc92c25\"] {display:none;}html.w-mod-js:not(.w-mod-ix) [data-w-id=\"87861ede-c820-cbd2-d8d7-563042229b64\"] {display:block;}}
         `,
-          }}
-        />
-        <span className="af-view">
-          <div className="af-class-body">
-            <AtomicMainPage />
-            <div id="luxy" className="af-class-sticky-book-a-tour">
-              <a
-                href="#book-a-tour"
-                className="af-class-link-block-3 w-inline-block"
-              />
-              <img
-                src="images/circular-atomic.svg"
-                loading="lazy"
-                style={{ opacity: 0 }}
-                data-w-id="3e2fd565-4b18-087d-fa84-c16e821ca542"
-                alt=""
-                className="af-class-image-51"
-              />
-            </div>
-            <div data-w-id="Div Block 46" className="af-class-preloader" />
-            {/* [if lte IE 9]><![endif] */}
+        }}
+      />
+      <span className="af-view">
+        <div className="af-class-body">
+          <AtomicMainPage />
+          <div id="luxy" className="af-class-sticky-book-a-tour">
+            <a
+              href="#book-a-tour"
+              className="af-class-link-block-3 w-inline-block"
+            />
+            <img
+              src="images/circular-atomic.svg"
+              loading="lazy"
+              style={{ opacity: 0 }}
+              data-w-id="3e2fd565-4b18-087d-fa84-c16e821ca542"
+              alt=""
+              className="af-class-image-51"
+            />
           </div>
-        </span>
+          <div data-w-id="Div Block 46" className="af-class-preloader" />
+          {/* [if lte IE 9]><![endif] */}
+        </div>
       </span>
-    );
-  }
-}
+    </span>
+  );
+};
 
 export default IndexView;
 

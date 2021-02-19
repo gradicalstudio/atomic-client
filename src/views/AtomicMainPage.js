@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
 import SpaceOverviewSection from "./sections/SpaceOverviewSection";
@@ -11,14 +11,47 @@ import Footer from "./sections/Footer";
 import { db } from "../firebase";
 
 export default function AtomicMainPage() {
+  const [loading, setLoading] = useState(false);
+  const [pageData, setPageData] = useState(null);
+
+  const fetchAtomicPageDetails = async () => {
+    setLoading(true);
+    let res = await db
+      .collection("atomicLandingPage")
+      .doc("Aw6fT3wFRWFsGqqnjJlt")
+      .get();
+    console.log("Data", res.data());
+    setLoading(false);
+    setPageData(res.data());
+  };
+
+  useEffect(() => {
+    fetchAtomicPageDetails();
+  }, []);
+
   return (
     <div id="luxy" className="af-class-smooth-wrapper">
-      <HeroSection />
-      <AboutSection />
-      <SpaceOverviewSection />
+      <HeroSection
+        loading={loading}
+        data={pageData ? pageData.heroSection : null}
+      />
+      <AboutSection
+        loading={loading}
+        data={pageData ? pageData.aboutSection : null}
+      />
+      <SpaceOverviewSection
+        loading={loading}
+        data={pageData ? pageData.spaceOverviewSection : null}
+      />
       <WhatsIncludedSection />
-      <RunYourEventSection />
-      <CommunitySection />
+      <RunYourEventSection
+        loading={loading}
+        data={pageData ? pageData.runYourEvent : null}
+      />
+      <CommunitySection
+        loading={loading}
+        data={pageData ? pageData.communitySection : null}
+      />
       <div className="af-class-section-8">
         <div className="af-class-div-block-53">
           <div className="af-class-loop-text-outer">

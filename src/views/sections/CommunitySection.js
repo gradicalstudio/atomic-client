@@ -1,6 +1,8 @@
 import React from "react";
+import LoadingSkeleton from "../../components/LoadingSkeleton";
 
-export default function CommunitySection() {
+export default function CommunitySection({ loading, data }) {
+  console.log(loading, data);
   return (
     <div className="af-class-section-6">
       <div data-w-id="Row 3" className="af-class-columns-4 w-row">
@@ -19,8 +21,7 @@ export default function CommunitySection() {
             }}
             className="af-class-heading-16 af-class-surrounded"
           >
-            Be surrounded by <br />
-            interesting people doing interesting things.
+            {!loading && data ? data.heading : <LoadingSkeleton />}
           </h1>
         </div>
         <div className="af-class-column-6 w-col w-col-6">
@@ -38,9 +39,7 @@ export default function CommunitySection() {
             }}
             className="af-class-heading-13"
           >
-            We believe people can be more together. <br />
-            We empower members to spark ideas as an individual all the while
-            drawing from and building upon the surrounding community.
+            {!loading && data ? data.paragraph : <LoadingSkeleton />}
           </h4>
         </div>
       </div>

@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
+import LoadingSkeleton from "../../components/LoadingSkeleton";
 
-export default function SpaceOverviewSection() {
+export default function SpaceOverviewSection({ loading, data }) {
+  const [currentTab, setCurrentTab] = useState("hotDesk");
   return (
     <div className="af-class-section-22">
       <div data-w-id="Row 7" className="af-class-columns-9 w-row">
@@ -33,8 +35,11 @@ export default function SpaceOverviewSection() {
                   }}
                   className="af-class-heading af-class-purple af-class-hotdesk af-class-heading-16"
                 >
-                  Desks for as <br />
-                  short as a day.
+                  {!loading && data ? (
+                    data[currentTab].heading
+                  ) : (
+                    <LoadingSkeleton />
+                  )}
                 </h2>
                 <p
                   style={{
@@ -50,9 +55,11 @@ export default function SpaceOverviewSection() {
                   }}
                   className="af-class-paragraph-3 af-class-hotdesk-para"
                 >
-                  Perfect for the modern-day nomad - flexible and at your
-                  convenience. Find your desk, plug in and take the new world of
-                  work one day at a time.
+                  {!loading && data ? (
+                    data[currentTab].paragraph
+                  ) : (
+                    <LoadingSkeleton />
+                  )}
                 </p>
                 <a
                   href="#book-a-tour"
@@ -114,28 +121,69 @@ export default function SpaceOverviewSection() {
               }}
               className="af-class-tabs-menu-3 w-tab-menu"
             >
-              <a
-                data-w-tab="Tab 1"
-                className="af-class-hot-desk af-class-tab w-inline-block w-tab-link w--current"
+              <button
+                onClick={() => setCurrentTab("hotDesk")}
+                // data-w-tab="Tab 1"
+                style={{
+                  backgroundColor:
+                    currentTab === "hotDesk" ? "black" : "#f0f0f0",
+                  color: currentTab === "hotDesk" ? "white" : "black",
+                  borderRadius: currentTab === "hotDesk" ? "50px" : "",
+                  outline: "none",
+                  width: "142px",
+                  marginRight: "10px",
+                  paddingRight: "16px",
+                  paddingLeft: "16px",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                }}
               >
-                <div className="af-class-text-block-21">Hot Desk</div>
-              </a>
-              <a
-                data-w-tab="Tab 2"
-                className="af-class-dedicated af-class-tab w-inline-block w-tab-link"
+                <div>Hot Desk</div>
+              </button>
+              <button
+                onClick={() => setCurrentTab("dedicatedDesk")}
+                // data-w-tab="Tab 2"
+                style={{
+                  backgroundColor:
+                    currentTab === "dedicatedDesk" ? "black" : "#f0f0f0",
+                  color: currentTab === "dedicatedDesk" ? "white" : "black",
+                  borderRadius: currentTab === "dedicatedDesk" ? "50px" : "",
+                  outline: "none",
+                  width: "142px",
+                  marginRight: "10px",
+                  paddingRight: "16px",
+                  paddingLeft: "16px",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                }}
               >
-                <div className="af-class-text-block-22">Dedicated Desk</div>
-              </a>
-              <a
-                data-w-tab="Tab 3"
-                className="af-class-private af-class-tab w-inline-block w-tab-link"
+                <div>Dedicated Desk</div>
+              </button>
+              <button
+                onClick={() => setCurrentTab("privateDesk")}
+                // data-w-tab="Tab 3"
+                style={{
+                  backgroundColor:
+                    currentTab === "privateDesk" ? "black" : "#f0f0f0",
+                  color: currentTab === "privateDesk" ? "white" : "black",
+                  borderRadius: currentTab === "privateDesk" ? "50px" : "",
+                  outline: "none",
+                  width: "142px",
+                  marginRight: "10px",
+                  paddingRight: "16px",
+                  paddingLeft: "16px",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                }}
               >
-                <div className="af-class-text-block-23">Private Office</div>
-              </a>
+                <div>Private Office</div>
+              </button>
             </div>
           </div>
         </div>
-        <div
+        <img
+          src={!loading && data ? data[currentTab].image : ""}
+          alt=""
           data-w-id="Column_2 8"
           style={{
             WebkitTransform:

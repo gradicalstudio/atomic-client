@@ -1,6 +1,7 @@
 import React from "react";
+import LoadingSkeleton from "../../components/LoadingSkeleton";
 
-export default function AboutSection() {
+export default function AboutSection({ loading, data }) {
   return (
     <section id="About" className="af-class-section-2">
       <div className="af-class-columns-2 w-row">
@@ -20,12 +21,8 @@ export default function AboutSection() {
             }}
             className="af-class-_1st-text-block"
           >
-            <h1 className="af-class-heading-18">At The Atomic, we exist to</h1>
-            <h1 className="af-class-heading-18 af-class-h2-2">
-              enable innovation for the
-            </h1>
-            <h1 className="af-class-heading-18 af-class-h2-3">
-              new generation.
+            <h1 className="af-class-heading-18">
+              {!loading && data ? data.header : <LoadingSkeleton />}
             </h1>
           </div>
         </div>
@@ -44,11 +41,10 @@ export default function AboutSection() {
             }}
             className="af-class-paragraph-1 af-class-title"
           >
-            <span className="af-class-text-span-6">
-              We offer a place for you to work,
+            <span>
+              {!loading && data ? data.paragraphs[0] : <LoadingSkeleton />}
               <br />‍
             </span>
-            create and collabrate.
           </p>
           <p
             data-w-id="Paragraph"
@@ -66,20 +62,19 @@ export default function AboutSection() {
             className="af-class-para-2"
           >
             <span>
-              Closely located to Technopark - Trivandrum
+              {!loading && data ? data.paragraphs[1] : <LoadingSkeleton />}
               <br />‍
-            </span>
-            <span>
-              The Atomic is a vibrant ecosystem for the
-              <br />
-              modern workforce.
             </span>
           </p>
         </div>
       </div>
       <div data-w-id="Container 4" className="af-class-container-5 w-container">
         <img
-          src="images/Lobby_2-3.svg"
+          src={
+            !loading && data
+              ? data.images[0]
+              : "https://homepages.cae.wisc.edu/~ece533/images/sails.png"
+          }
           loading="lazy"
           width={450}
           style={{
@@ -97,7 +92,11 @@ export default function AboutSection() {
           className="af-class-image-9"
         />
         <img
-          src="images/Front-desk-1.svg"
+          src={
+            !loading && data
+              ? data.images[1]
+              : "https://homepages.cae.wisc.edu/~ece533/images/sails.png"
+          }
           loading="lazy"
           width={504}
           style={{
@@ -115,7 +114,11 @@ export default function AboutSection() {
           className="af-class-image-10"
         />
         <img
-          src="images/Group-6.svg"
+          src={
+            !loading && data
+              ? data.images[2]
+              : "https://homepages.cae.wisc.edu/~ece533/images/sails.png"
+          }
           loading="lazy"
           width={512}
           style={{
