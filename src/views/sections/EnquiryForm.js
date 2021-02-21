@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { Form, Formik, ErrorMessage, Field } from "formik";
+import * as Yup from "yup";
+import CustomStyledSelect from "../../components/CustomStyledSelect";
+import { db } from "../../firebase";
+
+const schema = Yup.object().shape({
+  fullName: Yup.string().nullable().required("Required"),
+  email: Yup.string().nullable().required("Required"),
+  phoneNumber: Yup.string().nullable().required("Required"),
+  companyName: Yup.string().nullable().required("Required"),
+  requirement: Yup.string().nullable().required("Required"),
+  noOfSeats: Yup.string().nullable().required("Required"),
+});
 
 export default function EnquiryForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isFormSubmittingFailed, setIsFormSubmittingFailed] = useState(false);
   return (
     <div
       id="book-a-tour"
@@ -43,101 +59,261 @@ export default function EnquiryForm() {
           }}
           className="af-class-form-block w-form"
         >
-          <form
-            id="wf-form-enquiry-form"
-            name="wf-form-enquiry-form"
-            data-name="enquiry form"
-            method="get"
-            className="af-class-form"
+          <Formik
+            initialValues={{
+              fullName: "",
+              email: "",
+              phoneNumber: "",
+              companyName: "",
+              requirement: "",
+              noOfSeats: "",
+              additionalNotes: "",
+            }}
+            validationSchema={schema}
+            onSubmit={(values, form) => {
+              console.log("Values", values);
+              setIsSubmitting(true);
+              db.collection("enquiries")
+                .add(values)
+                .then(() => {
+                  setIsSubmitting(false);
+                  setIsFormSubmitted(true);
+                  form.resetForm();
+                })
+                .catch((error) => {
+                  setIsFormSubmittingFailed(true);
+                  console.log(error);
+                });
+            }}
           >
-            <div className="af-class-columns-6 w-row">
-              <div className="af-class-form-text w-col w-col-6">
-                <input
-                  type="text"
-                  placeholder="Full Name*"
-                  maxLength={256}
-                  data-name
-                  id="node"
-                  required
-                  className="af-class-text-field w-input"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number*"
-                  maxLength={256}
-                  required
-                  data-name
-                  id="node"
-                  className="af-class-text-field w-input"
-                />
-                <select
-                  id="Requirement"
-                  name="Requirement"
-                  data-name="Requirement*"
-                  required
-                  className="af-class-text-field w-select"
+            {({ values, errors }) => {
+              console.log(errors);
+              return (
+                <Form
+                  id="wf-form-enquiry-form"
+                  name="wf-form-enquiry-form"
+                  data-name="enquiry form"
+                  method="get"
+                  className="af-class-form"
                 >
-                  <option value>Select one...</option>
-                  <option value="First">Run an event</option>
-                  <option value="Second">Book a space</option>
-                  <option value="Third">Community Related</option>
-                </select>
-              </div>
-              <div className="af-class-form-text w-col w-col-6">
-                <input
-                  type="email"
-                  className="af-class-text-field w-input"
-                  maxLength={256}
-                  data-name
-                  placeholder="Email*"
-                  id="node-2"
-                  required
-                />
-                <input
-                  type="email"
-                  className="af-class-text-field w-input"
-                  maxLength={256}
-                  data-name
-                  placeholder="Company Name*"
-                  id="node-2"
-                  required
-                />
-                <select
-                  id="Number-of-Seats-2"
-                  name="Number-of-Seats"
-                  data-name="Number of Seats"
-                  required
-                  className="af-class-text-field w-select"
-                >
-                  <option value>Select one...</option>
-                </select>
+                  <div className="af-class-columns-6 w-row">
+                    <div className="af-class-form-text w-col w-col-6">
+                      <Field
+                        placeholder="Full Name*"
+                        name="fullName"
+                        maxLength={256}
+                        className="af-class-text-field w-input"
+                      />
+                      <ErrorMessage
+                        name="fullName"
+                        render={(msg) => (
+                          <div
+                            style={{ color: "red", marginBottom: 10 }}
+                            className="text-red-600 text-sm"
+                          >
+                            {msg}
+                          </div>
+                        )}
+                      />
+                      <Field
+                        placeholder="Phone Number*"
+                        maxLength={256}
+                        name="phoneNumber"
+                        className="af-class-text-field w-input"
+                      />
+                      <ErrorMessage
+                        name="phoneNumber"
+                        render={(msg) => (
+                          <div
+                            style={{ color: "red", marginBottom: 10 }}
+                            className="text-red-600 text-sm"
+                          >
+                            {msg}
+                          </div>
+                        )}
+                      />
+
+                      <div style={{ width: "96%", marginBottom: 10 }}>
+                        <Field
+                          name="requirement"
+                          options={[
+                            {
+                              label: "Run an event",
+                              value: "Run an event",
+                            },
+                            {
+                              label: "Book a space",
+                              value: "Book a space",
+                            },
+                            {
+                              label: "Community Related",
+                              value: "Community Related",
+                            },
+                          ]}
+                          component={(props) => (
+                            <CustomStyledSelect
+                              {...props}
+                              isClearable
+                              placeholder="Select requirement*"
+                            />
+                          )}
+                        />
+                        <ErrorMessage
+                          name="requirement"
+                          render={(msg) => (
+                            <div
+                              style={{
+                                color: "red",
+                                marginBottom: 10,
+                                marginTop: 10,
+                              }}
+                              className="text-red-600 text-sm"
+                            >
+                              {msg}
+                            </div>
+                          )}
+                        />
+                      </div>
+                    </div>
+                    <div className="af-class-form-text w-col w-col-6">
+                      <Field
+                        name="email"
+                        className="af-class-text-field w-input"
+                        maxLength={256}
+                        placeholder="Email*"
+                        id="node-2"
+                      />
+                      <ErrorMessage
+                        name="email"
+                        render={(msg) => (
+                          <div
+                            style={{ color: "red", marginBottom: 10 }}
+                            className="text-red-600 text-sm"
+                          >
+                            {msg}
+                          </div>
+                        )}
+                      />
+                      <Field
+                        className="af-class-text-field w-input"
+                        maxLength={256}
+                        name="companyName"
+                        placeholder="Company Name*"
+                        id="node-2"
+                      />
+                      <ErrorMessage
+                        name="companyName"
+                        render={(msg) => (
+                          <div
+                            style={{ color: "red", marginBottom: 10 }}
+                            className="text-red-600 text-sm"
+                          >
+                            {msg}
+                          </div>
+                        )}
+                      />
+                      <div style={{ width: "96%" }}>
+                        <Field
+                          name="noOfSeats"
+                          options={Array(10)
+                            .fill()
+                            .map((el, index) => ({
+                              label: index + 1,
+                              value: index + 1,
+                            }))}
+                          component={(props) => (
+                            <CustomStyledSelect
+                              {...props}
+                              isClearable
+                              placeholder="No. of seats*"
+                            />
+                          )}
+                        />
+                      </div>
+                      <ErrorMessage
+                        name="noOfSeats"
+                        render={(msg) => (
+                          <div
+                            style={{
+                              color: "red",
+                              marginBottom: 10,
+                              marginTop: 10,
+                            }}
+                            className="text-red-600 text-sm"
+                          >
+                            {msg}
+                          </div>
+                        )}
+                      />
+                    </div>
+                  </div>
+                  <div className="af-class-div-block-56">
+                    <div className="af-class-div-block-42">
+                      <Field
+                        as="textarea"
+                        rows={4}
+                        placeholder="Additional Notes"
+                        maxLength={5000}
+                        id="node-3"
+                        name="additionalNotes"
+                        className="af-class-text-field af-class-coments w-input"
+                      />
+                    </div>
+                  </div>
+                  {/* <input
+                    type="submit"
+                    defaultValue="GET IN TOUCH"
+                    data-wait="Please wait..."
+                    className="af-class-submit-button w-button"
+                  /> */}
+                  <button
+                    disabled={isSubmitting}
+                    type="submit"
+                    className="af-class-submit-button w-button"
+                  >
+                    {!isSubmitting ? "SUBMIT" : "Please wait..."}
+                  </button>
+                </Form>
+              );
+            }}
+          </Formik>
+
+          {isFormSubmitted ? (
+            <div>
+              <div
+                style={{
+                  color: "#1df700",
+                  backgroundColor: "#e8ffe6",
+                  fontSize: 26,
+                  display: "flex",
+                  justifyContent: "center",
+                  marginTop: 40,
+                  padding: 10,
+                  borderRadius: 50,
+                }}
+              >
+                Thank you! Your submission has been received!
               </div>
             </div>
-            <div className="af-class-div-block-56">
-              <div className="af-class-div-block-42">
-                <textarea
-                  placeholder="Additional Notes"
-                  maxLength={5000}
-                  id="node-3"
-                  data-name
-                  className="af-class-text-field af-class-coments w-input"
-                  defaultValue={""}
-                />
+          ) : null}
+          {isFormSubmittingFailed ? (
+            <div>
+              <div
+                style={{
+                  color: "#ff0000",
+                  backgroundColor: "#ffebeb",
+                  fontSize: 26,
+                  display: "flex",
+                  justifyContent: "center",
+                  marginTop: 40,
+                  padding: 10,
+                  borderRadius: 50,
+                }}
+              >
+                Oops! Something went wrong while submitting the form.
               </div>
             </div>
-            <input
-              type="submit"
-              defaultValue="GET IN TOUCH"
-              data-wait="Please wait..."
-              className="af-class-submit-button w-button"
-            />
-          </form>
-          <div className="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div className="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          ) : null}
         </div>
       </div>
       <div
