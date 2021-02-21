@@ -78,7 +78,7 @@ export default function EnquiryForm() {
                 .add({
                   ...values,
                   createdAt: format(new Date(), "PPP"),
-                  status: false,
+                  status: true,
                 })
                 .then(() => {
                   setIsSubmitting(false);
