@@ -75,7 +75,11 @@ export default function EnquiryForm() {
               console.log("Values", values);
               setIsSubmitting(true);
               db.collection("enquiries")
-                .add({ ...values, createdAt: format(new Date(), "PPP") })
+                .add({
+                  ...values,
+                  createdAt: format(new Date(), "PPP"),
+                  status: false,
+                })
                 .then(() => {
                   setIsSubmitting(false);
                   setIsFormSubmitted(true);
