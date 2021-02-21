@@ -3,6 +3,7 @@ import { Form, Formik, ErrorMessage, Field } from "formik";
 import * as Yup from "yup";
 import CustomStyledSelect from "../../components/CustomStyledSelect";
 import { db } from "../../firebase";
+import { format } from "date-fns";
 
 const schema = Yup.object().shape({
   fullName: Yup.string().nullable().required("Required"),
@@ -74,7 +75,7 @@ export default function EnquiryForm() {
               console.log("Values", values);
               setIsSubmitting(true);
               db.collection("enquiries")
-                .add(values)
+                .add({ ...values, createdAt: format(new Date(), "PPP") })
                 .then(() => {
                   setIsSubmitting(false);
                   setIsFormSubmitted(true);
@@ -95,6 +96,10 @@ export default function EnquiryForm() {
                   data-name="enquiry form"
                   method="get"
                   className="af-class-form"
+                  onFocus={() => {
+                    setIsFormSubmitted(false);
+                    setIsFormSubmittingFailed(false);
+                  }}
                 >
                   <div className="af-class-columns-6 w-row">
                     <div className="af-class-form-text w-col w-col-6">
