@@ -5,16 +5,7 @@ import LoadingSkeleton from "../../components/LoadingSkeleton";
 const HeroSection = ({ loading, data }) => {
   return (
     <div>
-      <BackgroundSlider
-        images={
-          !loading && data
-            ? data.images
-            : ["https://homepages.cae.wisc.edu/~ece533/images/sails.png"]
-        }
-        duration={1.2}
-        transition={2}
-      />
-      <div>
+      <div style={{ backgroundColor: "black" }}>
         <div className="af-class-container-3 w-container">
           <div
             data-collapse="small"
@@ -70,6 +61,15 @@ const HeroSection = ({ loading, data }) => {
           </div>
         </div>
         <div className="af-class-container-2 w-container">
+          <BackgroundSlider
+            images={
+              !loading && data
+                ? data.images
+                : ["https://homepages.cae.wisc.edu/~ece533/images/sails.png"]
+            }
+            duration={1.2}
+            transition={2}
+          />
           <div className="af-class-hero-text-holder">
             <img
               src="images/ARROW-LOGO.svg"

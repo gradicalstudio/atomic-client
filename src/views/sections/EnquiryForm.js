@@ -224,12 +224,24 @@ export default function EnquiryForm() {
                       <div style={{ width: "96%" }}>
                         <Field
                           name="noOfSeats"
-                          options={Array(10)
-                            .fill()
-                            .map((el, index) => ({
-                              label: index + 1,
-                              value: index + 1,
-                            }))}
+                          options={[
+                            {
+                              label: "Just Myself",
+                              value: "Just Myself",
+                            },
+                            {
+                              label: "2-10 Seats",
+                              value: "2-10 Seats",
+                            },
+                            {
+                              label: "11-15 Seats",
+                              value: "11-15 Seats",
+                            },
+                            {
+                              label: "50+",
+                              value: "50+",
+                            },
+                          ]}
                           component={(props) => (
                             <CustomStyledSelect
                               {...props}
@@ -256,7 +268,15 @@ export default function EnquiryForm() {
                       />
                     </div>
                   </div>
-                  <div className="af-class-div-block-56">
+                  <div
+                    className="af-class-div-block-56"
+                    style={{
+                      width: "98%",
+                      position: "relative",
+
+                      left: 10,
+                    }}
+                  >
                     <div className="af-class-div-block-42">
                       <Field
                         as="textarea"
