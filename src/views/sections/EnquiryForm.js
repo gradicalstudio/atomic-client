@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import CustomStyledSelect from "../../components/CustomStyledSelect";
 import { db } from "../../firebase";
 import { format } from "date-fns";
+import { toast } from "react-toastify";
 
 const schema = Yup.object().shape({
   fullName: Yup.string().nullable().required("Required"),
@@ -70,9 +71,10 @@ export default function EnquiryForm() {
               noOfSeats: "",
               additionalNotes: "",
             }}
-            validationSchema={schema}
+            //validationSchema={schema}
             onSubmit={(values, form) => {
               console.log("Values", values);
+
               setIsSubmitting(true);
               db.collection("enquiries")
                 .add({
@@ -82,11 +84,15 @@ export default function EnquiryForm() {
                 })
                 .then(() => {
                   setIsSubmitting(false);
-                  setIsFormSubmitted(true);
+                  // setIsFormSubmitted(true);
+                  toast.success(
+                    "Thanks for submitting, we’ll get in touch with you soon."
+                  );
                   form.resetForm();
                 })
                 .catch((error) => {
-                  setIsFormSubmittingFailed(true);
+                  // setIsFormSubmittingFailed(true);
+                  toast.error("Failed to submit enquiry");
                   console.log(error);
                 });
             }}

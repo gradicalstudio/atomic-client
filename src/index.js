@@ -5,6 +5,8 @@ import "./scripts";
 import "./css/atomic-d10870.webflow.css";
 import "./css/normalize.css";
 import "./css/webflow.css";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 import IndexView from "./views/IndexView";
 import reportWebVitals from "./reportWebVitals";
@@ -12,6 +14,7 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <React.StrictMode>
     <IndexView />
+    <ToastContainer />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -60,7 +60,10 @@ const HeroSection = ({ loading, data }) => {
             </div>
           </div>
         </div>
-        <div className="af-class-container-2 w-container">
+        <div
+          className="af-class-container-2 w-container"
+          style={{ paddingBottom: 170 }}
+        >
           <BackgroundSlider
             images={
               !loading && data

@@ -99,7 +99,7 @@ export default function RunYourEventSection({ loading, data }) {
             <button
               onClick={() => {
                 console.log(currentImageIndex);
-                if (currentImageIndex < data.images.length - 1) {
+                if (currentImageIndex < data.images.length - 2) {
                   setCurrentImageIndex(currentImageIndex + 1);
                 }
               }}
@@ -161,7 +161,7 @@ export default function RunYourEventSection({ loading, data }) {
             <img
               src={
                 !loading && data
-                  ? data.images[currentImageIndex]
+                  ? data.images[currentImageIndex + 1]
                   : "images/image-2.svg"
               }
               loading="lazy"

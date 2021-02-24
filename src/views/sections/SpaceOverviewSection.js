@@ -118,6 +118,7 @@ export default function SpaceOverviewSection({ loading, data }) {
                 transform:
                   "translate3d(40px, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                 opacity: 0,
+                backgroundColor: "#f0f0f0",
               }}
               className="af-class-tabs-menu-3 w-tab-menu"
             >
@@ -128,10 +129,10 @@ export default function SpaceOverviewSection({ loading, data }) {
                   backgroundColor:
                     currentTab === "hotDesk" ? "black" : "#f0f0f0",
                   color: currentTab === "hotDesk" ? "white" : "black",
-                  borderRadius: currentTab === "hotDesk" ? "50px" : "",
+                  borderRadius: "50px",
                   outline: "none",
-                  width: "142px",
-                  marginRight: "10px",
+                  width: "-webkit-fill-available",
+
                   paddingRight: "16px",
                   paddingLeft: "16px",
                   paddingTop: "10px",
@@ -147,10 +148,10 @@ export default function SpaceOverviewSection({ loading, data }) {
                   backgroundColor:
                     currentTab === "dedicatedDesk" ? "black" : "#f0f0f0",
                   color: currentTab === "dedicatedDesk" ? "white" : "black",
-                  borderRadius: currentTab === "dedicatedDesk" ? "50px" : "",
+                  borderRadius: "50px",
                   outline: "none",
-                  width: "142px",
-                  marginRight: "10px",
+                  width: "-webkit-fill-available",
+
                   paddingRight: "16px",
                   paddingLeft: "16px",
                   paddingTop: "10px",
@@ -166,17 +167,17 @@ export default function SpaceOverviewSection({ loading, data }) {
                   backgroundColor:
                     currentTab === "privateDesk" ? "black" : "#f0f0f0",
                   color: currentTab === "privateDesk" ? "white" : "black",
-                  borderRadius: currentTab === "privateDesk" ? "50px" : "",
+                  borderRadius: "50px",
                   outline: "none",
-                  width: "142px",
-                  marginRight: "10px",
+                  width: "-webkit-fill-available",
+
                   paddingRight: "16px",
                   paddingLeft: "16px",
                   paddingTop: "10px",
                   paddingBottom: "10px",
                 }}
               >
-                <div>Private Office</div>
+                <div>Private Desk</div>
               </button>
             </div>
           </div>
