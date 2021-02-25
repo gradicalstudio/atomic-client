@@ -1,5 +1,6 @@
 import React from "react";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
+import Placeholder from "../../images/PLACEHOLDER.jpg";
 
 export default function AboutSection({ loading, data }) {
   return (
@@ -70,11 +71,7 @@ export default function AboutSection({ loading, data }) {
       </div>
       <div data-w-id="Container 4" className="af-class-container-5 w-container">
         <img
-          src={
-            !loading && data
-              ? data.images[0]
-              : "https://homepages.cae.wisc.edu/~ece533/images/sails.png"
-          }
+          src={!loading && data ? data.images[0] : Placeholder}
           loading="lazy"
           width={450}
           style={{
@@ -92,11 +89,7 @@ export default function AboutSection({ loading, data }) {
           className="af-class-image-9"
         />
         <img
-          src={
-            !loading && data
-              ? data.images[1]
-              : "https://homepages.cae.wisc.edu/~ece533/images/sails.png"
-          }
+          src={!loading && data ? data.images[1] : Placeholder}
           loading="lazy"
           width={504}
           style={{
@@ -114,11 +107,7 @@ export default function AboutSection({ loading, data }) {
           className="af-class-image-10"
         />
         <img
-          src={
-            !loading && data
-              ? data.images[2]
-              : "https://homepages.cae.wisc.edu/~ece533/images/sails.png"
-          }
+          src={!loading && data ? data.images[2] : Placeholder}
           loading="lazy"
           width={512}
           style={{

@@ -6,6 +6,7 @@ export default function SocialMediaSection() {
       <div
         data-w-id="461260a2-54bb-0e9f-ff6d-03c3003697f1"
         className="af-class-section-21"
+        style={{ backgroundColor: "black" }}
       >
         <div className="af-class-text-wrapper">
           <h1

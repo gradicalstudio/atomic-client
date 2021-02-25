@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
+import Placeholder from "../../images/PLACEHOLDER.jpg";
 
 export default function SpaceOverviewSection({ loading, data }) {
   const [currentTab, setCurrentTab] = useState("hotDesk");
@@ -183,8 +184,13 @@ export default function SpaceOverviewSection({ loading, data }) {
           </div>
         </div>
         <img
-          src={!loading && data ? data[currentTab].image : ""}
+          src={
+            !loading && data && data[currentTab].image
+              ? data[currentTab].image
+              : Placeholder
+          }
           alt=""
+          loading="eager"
           data-w-id="Column_2 8"
           style={{
             WebkitTransform:

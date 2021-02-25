@@ -2,6 +2,7 @@ import React from "react";
 import BackgroundSlider from "react-background-slider";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
 import { isMobile } from "react-device-detect";
+import Placeholder from "../../images/PLACEHOLDER.jpg";
 
 const HeroSection = ({ loading, data }) => {
   return (
@@ -66,11 +67,7 @@ const HeroSection = ({ loading, data }) => {
           style={{ paddingBottom: isMobile ? "58%" : 120 }}
         >
           <BackgroundSlider
-            images={
-              !loading && data
-                ? data.images
-                : ["https://homepages.cae.wisc.edu/~ece533/images/sails.png"]
-            }
+            images={!loading && data ? data.images : [Placeholder]}
             duration={1.2}
             transition={2}
           />
