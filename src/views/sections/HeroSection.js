@@ -1,6 +1,7 @@
 import React from "react";
 import BackgroundSlider from "react-background-slider";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
+import { isMobile } from "react-device-detect";
 
 const HeroSection = ({ loading, data }) => {
   return (
@@ -62,7 +63,7 @@ const HeroSection = ({ loading, data }) => {
         </div>
         <div
           className="af-class-container-2 w-container"
-          style={{ paddingBottom: 170 }}
+          style={{ paddingBottom: isMobile ? "58%" : 120 }}
         >
           <BackgroundSlider
             images={

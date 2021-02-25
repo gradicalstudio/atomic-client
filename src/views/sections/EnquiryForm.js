@@ -5,6 +5,7 @@ import CustomStyledSelect from "../../components/CustomStyledSelect";
 import { db } from "../../firebase";
 import { format } from "date-fns";
 import { toast } from "react-toastify";
+import { isMobile } from "react-device-detect";
 
 const schema = Yup.object().shape({
   fullName: Yup.string().nullable().required("Required"),
@@ -71,7 +72,7 @@ export default function EnquiryForm() {
               noOfSeats: "",
               additionalNotes: "",
             }}
-            //validationSchema={schema}
+            validationSchema={schema}
             onSubmit={(values, form) => {
               console.log("Values", values);
 
@@ -117,14 +118,23 @@ export default function EnquiryForm() {
                         placeholder="Full Name*"
                         name="fullName"
                         maxLength={256}
-                        className="af-class-text-field w-input"
+                        style={{
+                          width: "96%",
+                          marginBottom: 10,
+                          padding: 20,
+                          fontSize: 20,
+                          borderStyle: isMobile ? "none" : "solid",
+                          borderColor: "black",
+                        }}
                       />
                       <ErrorMessage
                         name="fullName"
                         render={(msg) => (
                           <div
-                            style={{ color: "red", marginBottom: 10 }}
-                            className="text-red-600 text-sm"
+                            style={{
+                              color: "red",
+                              marginBottom: 10,
+                            }}
                           >
                             {msg}
                           </div>
@@ -134,15 +144,19 @@ export default function EnquiryForm() {
                         placeholder="Phone Number*"
                         maxLength={256}
                         name="phoneNumber"
-                        className="af-class-text-field w-input"
+                        style={{
+                          width: "96%",
+                          marginBottom: 10,
+                          padding: 20,
+                          fontSize: 20,
+                          borderStyle: isMobile ? "none" : "solid",
+                          borderColor: "black",
+                        }}
                       />
                       <ErrorMessage
                         name="phoneNumber"
                         render={(msg) => (
-                          <div
-                            style={{ color: "red", marginBottom: 10 }}
-                            className="text-red-600 text-sm"
-                          >
+                          <div style={{ color: "red", marginBottom: 10 }}>
                             {msg}
                           </div>
                         )}
@@ -182,7 +196,6 @@ export default function EnquiryForm() {
                                 marginBottom: 10,
                                 marginTop: 10,
                               }}
-                              className="text-red-600 text-sm"
                             >
                               {msg}
                             </div>
@@ -193,36 +206,44 @@ export default function EnquiryForm() {
                     <div className="af-class-form-text w-col w-col-6">
                       <Field
                         name="email"
-                        className="af-class-text-field w-input"
                         maxLength={256}
                         placeholder="Email*"
                         id="node-2"
+                        style={{
+                          width: "96%",
+                          marginBottom: 10,
+                          padding: 20,
+                          fontSize: 20,
+                          borderStyle: isMobile ? "none" : "solid",
+                          borderColor: "black",
+                        }}
                       />
                       <ErrorMessage
                         name="email"
                         render={(msg) => (
-                          <div
-                            style={{ color: "red", marginBottom: 10 }}
-                            className="text-red-600 text-sm"
-                          >
+                          <div style={{ color: "red", marginBottom: 10 }}>
                             {msg}
                           </div>
                         )}
                       />
                       <Field
-                        className="af-class-text-field w-input"
                         maxLength={256}
                         name="companyName"
                         placeholder="Company Name*"
                         id="node-2"
+                        style={{
+                          width: "96%",
+                          marginBottom: 10,
+                          padding: 20,
+                          fontSize: 20,
+                          borderStyle: isMobile ? "none" : "solid",
+                          borderColor: "black",
+                        }}
                       />
                       <ErrorMessage
                         name="companyName"
                         render={(msg) => (
-                          <div
-                            style={{ color: "red", marginBottom: 10 }}
-                            className="text-red-600 text-sm"
-                          >
+                          <div style={{ color: "red", marginBottom: 10 }}>
                             {msg}
                           </div>
                         )}
@@ -266,7 +287,6 @@ export default function EnquiryForm() {
                               marginBottom: 10,
                               marginTop: 10,
                             }}
-                            className="text-red-600 text-sm"
                           >
                             {msg}
                           </div>
@@ -283,15 +303,28 @@ export default function EnquiryForm() {
                       left: 10,
                     }}
                   >
-                    <div className="af-class-div-block-42">
+                    <div
+                      style={{
+                        width: isMobile ? "98%" : "100%",
+                        marginLeft: isMobile ? -10 : -20,
+                        marginTop: isMobile ? 10 : 0,
+                      }}
+                    >
                       <Field
                         as="textarea"
-                        rows={4}
+                        style={{
+                          width: "100%",
+                          marginBottom: 10,
+                          padding: 20,
+                          fontSize: 20,
+                          borderStyle: isMobile ? "none" : "solid",
+                          borderColor: "black",
+                        }}
+                        rows={6}
                         placeholder="Additional Notes"
                         maxLength={5000}
                         id="node-3"
                         name="additionalNotes"
-                        className="af-class-text-field af-class-coments w-input"
                       />
                     </div>
                   </div>

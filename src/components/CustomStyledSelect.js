@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
 import CreatableSelect from "react-select/creatable";
+import { isMobile } from "react-device-detect";
 const CustomSelect = ({
   className = "border rounded-md w-full bg-white focus:shadow-none text-sm border-gray-400 font-normal",
   placeholder,
@@ -196,7 +197,9 @@ const CustomSelect = ({
           }}
         />
       ) : (
-        <div style={{ borderStyle: "solid", borderWidth: 2 }}>
+        <div
+          style={{ borderStyle: isMobile ? "none" : "solid", borderWidth: 2 }}
+        >
           <Select
             className={`flex-auto lg:inline-block text-black focus:outline-none ${className}`}
             styles={themeMap[theme]}

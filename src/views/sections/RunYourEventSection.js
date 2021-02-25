@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
+import { isMobile } from "react-device-detect";
 
 export default function RunYourEventSection({ loading, data }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -146,7 +147,7 @@ export default function RunYourEventSection({ loading, data }) {
                   : "images/image-2.svg"
               }
               loading="lazy"
-              height={450}
+              height={isMobile ? 200 : 450}
               width={500}
               alt=""
               className="af-class-image-56 af-class-top"
@@ -165,7 +166,7 @@ export default function RunYourEventSection({ loading, data }) {
                   : "images/image-2.svg"
               }
               loading="lazy"
-              height={450}
+              height={isMobile ? 200 : 450}
               width={500}
               alt=""
               className="af-class-image-56 af-class-bottom"
