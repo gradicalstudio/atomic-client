@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import GoogleMapReact from "google-map-react";
 
 export default function Footer() {
+  const [center, setCenter] = useState({
+    lat: 59.95,
+    lng: 30.33,
+  });
+
+  const [zoom, setZoom] = useState(11);
   return (
     <footer id="Footer" className="af-class-section-11">
       <div className="af-class-columns-5 w-row">
@@ -86,7 +93,18 @@ export default function Footer() {
         </div>
         <div className="w-col w-col-5">
           <div className="af-class-container-12 w-container">
-            <div className="af-class-map w-widget w-widget-map" />
+            <div className=" w-widget w-widget-map">
+              <GoogleMapReact
+                bootstrapURLKeys={{
+                  key: "AIzaSyA8mst49AyWk8Mlm1x-wU561gaXxxHCpCM",
+                }}
+                defaultCenter={center}
+                defaultZoom={zoom}
+              >
+                <div lat={59.955413} lng={30.337844} text="My Marker" />
+              </GoogleMapReact>
+            </div>
+
             <div className="af-class-div-block-41">
               <img src="images/studio-gradical.svg" loading="lazy" alt="" />
             </div>
@@ -100,7 +118,15 @@ export default function Footer() {
           </div>
         </div>
         <div className="af-class-column-12 w-col w-col-6">
-          <div className="af-class-map w-widget w-widget-map" />
+          <div className="w-widget w-widget-map">
+            <GoogleMapReact
+              defaultCenter={center}
+              defaultZoom={zoom}
+              style={{ height: 100, width: 100 }}
+            >
+              <div lat={59.955413} lng={30.337844} text="My Marker" />
+            </GoogleMapReact>
+          </div>
           <div className="af-class-text-block-17 af-class-footer">
             Reach us at +91 123 456 7890
           </div>
