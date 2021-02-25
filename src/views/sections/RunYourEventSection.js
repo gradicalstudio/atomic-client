@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
 import { isMobile } from "react-device-detect";
+import Placeholder from "../../images/PLACEHOLDER.jpg";
 
 export default function RunYourEventSection({ loading, data }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -99,8 +100,10 @@ export default function RunYourEventSection({ loading, data }) {
           >
             <button
               onClick={() => {
-                console.log(currentImageIndex);
-                if (currentImageIndex < data.images.length - 2) {
+                // console.log(currentImageIndex);
+                // setImages(data.images.reverse());
+
+                if (currentImageIndex < data.images.length - 1) {
                   setCurrentImageIndex(currentImageIndex + 1);
                 }
               }}
@@ -126,6 +129,9 @@ export default function RunYourEventSection({ loading, data }) {
             </button>
             <button
               onClick={() => {
+                // setCurrentImageIndex(currentImageIndex - 1);
+                // setImages(images.reverse());
+                // setCurrentImageIndex(currentImageIndex - 1);
                 if (currentImageIndex > 0) {
                   setCurrentImageIndex(currentImageIndex - 1);
                 }
@@ -143,8 +149,12 @@ export default function RunYourEventSection({ loading, data }) {
             <img
               src={
                 !loading && data
-                  ? data.images[currentImageIndex]
-                  : "images/image-2.svg"
+                  ? data.images[
+                      currentImageIndex === data.images.length - 1
+                        ? 0
+                        : currentImageIndex + 1
+                    ]
+                  : Placeholder
               }
               loading="lazy"
               height={isMobile ? 200 : 450}
@@ -162,8 +172,12 @@ export default function RunYourEventSection({ loading, data }) {
             <img
               src={
                 !loading && data
-                  ? data.images[currentImageIndex + 1]
-                  : "images/image-2.svg"
+                  ? data.images[
+                      currentImageIndex === data.images.length - 1
+                        ? data.images.length - 1
+                        : currentImageIndex
+                    ]
+                  : Placeholder
               }
               loading="lazy"
               height={isMobile ? 200 : 450}
