@@ -96,7 +96,7 @@ export default function Footer() {
             <div className=" w-widget w-widget-map">
               <GoogleMapReact
                 bootstrapURLKeys={{
-                  key: "AIzaSyA8mst49AyWk8Mlm1x-wU561gaXxxHCpCM",
+                  key: "AIzaSyBWdBiHpLdcEWCzQUu9irRM-L0TK0NUvTw",
                 }}
                 defaultCenter={center}
                 defaultZoom={zoom}

@@ -1,6 +1,32 @@
-import React from "react";
+import React, { useState, useEffect, createRef } from "react";
+import "../../scripts/instagramFeed";
+import $ from "jquery";
+
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 export default function SocialMediaSection() {
+  const [posts, setPosts] = useState(null);
+  const cars = createRef();
+
+  useEffect(() => {
+    $.instagramFeed({
+      username: "ithub",
+
+      get_data: true,
+      callback: function (data) {
+        console.log("Insta Data", data.edge_owner_to_timeline_media.edges);
+        setPosts(
+          data.edge_owner_to_timeline_media.edges.map((el) => ({
+            original: el.node.display_url,
+            thumbnail: el.node.thumbnail_src,
+          }))
+        );
+      },
+    });
+  }, []);
+
   return (
     <div>
       <div
@@ -56,48 +82,95 @@ export default function SocialMediaSection() {
           }}
           className="af-class-card-wrapper"
         >
-          <div className="af-class-button-wrapper">
-            <div className="af-class-button-bg-color">
-              <img
-                src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d134a8845b9c9f0f85_Ellipse%202.svg"
-                loading="lazy"
-                width={58}
-                alt=""
-              />
-              <div className="af-class-button-arrow">
+          <div
+            className="af-class-button-wrapper"
+            onClick={() => cars.current.prev()}
+            style={{ cursor: "pointer", zIndex: 10 }}
+          >
+            {posts ? (
+              <div className="af-class-button-bg-color">
                 <img
-                  src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/6029864e35d51a9b0e01f63e_Vector%20(1).png"
+                  src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d134a8845b9c9f0f85_Ellipse%202.svg"
                   loading="lazy"
+                  width={58}
                   alt=""
                 />
+                <div className="af-class-button-arrow">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/6029864e35d51a9b0e01f63e_Vector%20(1).png"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
-          <div className="af-class-button-wrapper2">
-            <div className="af-class-button-bg-color af-class-custom">
-              <img
-                src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d0f37b56ef07d80cfb_Ellipse%201.svg"
-                loading="lazy"
-                width={59}
-                alt=""
-              />
-              <div className="af-class-button-arrow">
+          <div
+            className="af-class-button-wrapper2"
+            onClick={() => cars.current.next()}
+            style={{ cursor: "pointer", zIndex: 10 }}
+          >
+            {posts ? (
+              <div className="af-class-button-bg-color af-class-custom">
                 <img
-                  src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/6029864eb5ed084348e6bfab_Vector%20(2).png"
+                  src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d0f37b56ef07d80cfb_Ellipse%201.svg"
                   loading="lazy"
+                  width={59}
                   alt=""
                 />
+                <div className="af-class-button-arrow">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/6029864eb5ed084348e6bfab_Vector%20(2).png"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
-          <div className="af-class-custom-slider-wrapper">
-            <div className="af-class-slider">
-              <div className="af-class-card" />
-              <div className="af-class-card" />
-              <div className="af-class-card" />
-              <div className="af-class-card" />
-              <div className="af-class-card" />
-            </div>
+
+          <div>
+            {posts ? (
+              <div
+                style={{
+                  display: "flex",
+                  gap: 10,
+                  overflowX: "auto",
+                  marginTop: 50,
+                  zIndex: 1,
+                }}
+              >
+                <OwlCarousel
+                  ref={cars}
+                  items={5}
+                  merge
+                  autoWidth={false}
+                  className="owl-theme"
+                  loop
+                  dots={false}
+                  margin={20}
+                >
+                  {posts.map((post) => {
+                    return (
+                      <div style={{ height: 400, width: 300 }}>
+                        <img src={post.original} alt="" />
+                      </div>
+                    );
+                  })}
+                </OwlCarousel>
+              </div>
+            ) : (
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  color: "white",
+                  fontSize: 20,
+                }}
+              >
+                <p>Loading...</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
