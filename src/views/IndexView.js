@@ -76,7 +76,7 @@ const IndexView = () => {
 
   return (
     <span>
-      <style
+      {/* <style
         dangerouslySetInnerHTML={{
           __html: `
           @import url(../css/normalize.css);
@@ -85,7 +85,7 @@ const IndexView = () => {
 
         `,
         }}
-      />
+      /> */}
       <span className="af-view">
         <div className="af-class-body">
           <AtomicMainPage />

@@ -8,24 +8,46 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 export default function SocialMediaSection() {
   const [posts, setPosts] = useState(null);
+  const [loading, setLoading] = useState(false);
   const cars = createRef();
 
+  //theatomicspaces
+
   useEffect(() => {
+    setLoading(true);
     $.instagramFeed({
       username: "ithub",
 
       get_data: true,
       callback: function (data) {
-        console.log("Insta Data", data.edge_owner_to_timeline_media.edges);
+        console.log("Insta Data", loading);
+
         setPosts(
           data.edge_owner_to_timeline_media.edges.map((el) => ({
             original: el.node.display_url,
             thumbnail: el.node.thumbnail_src,
           }))
         );
+
+        setLoading(false);
       },
     });
   }, []);
+
+  // if (loading) {
+  //   return (
+  //     <div
+  //       style={{
+  //         display: "flex",
+  //         justifyContent: "center",
+  //         color: "white",
+  //         fontSize: 20,
+  //       }}
+  //     >
+  //       <p>Loading...</p>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
@@ -51,7 +73,10 @@ export default function SocialMediaSection() {
           >
             Our Social
           </h1>
-          <h3
+          <a
+            href="https://www.instagram.com/theatomicspaces"
+            target="_blank"
+            rel="noreferrer"
             style={{
               opacity: 0,
               WebkitTransform:
@@ -66,7 +91,7 @@ export default function SocialMediaSection() {
             className="af-class-text-block-16 af-class-ok"
           >
             Follow us on Instagram
-          </h3>
+          </a>
         </div>
         <div
           style={{
@@ -130,54 +155,67 @@ export default function SocialMediaSection() {
           </div>
 
           <div>
-            {posts ? (
-              <div
-                style={{
-                  display: "flex",
-                  gap: 10,
-                  overflowX: "auto",
-                  marginTop: 50,
-                  zIndex: 1,
-                }}
-              >
-                <OwlCarousel
-                  ref={cars}
-                  items={5}
-                  merge
-                  autoWidth={false}
-                  className="owl-theme"
-                  loop
-                  dots={false}
-                  margin={20}
-                  responsive={{
-                    200: {
-                      items: 1,
-                      margin: 10,
-                      stagePadding: 20,
-                    },
-                    500: {
-                      items: 2,
-                      margin: 10,
-                      stagePadding: 20,
-                    },
-                    700: {
-                      items: 4,
-                      margin: 10,
-                      stagePadding: 10,
-                    },
+            {!loading ? (
+              posts && posts.length > 0 ? (
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 10,
+                    overflowX: "auto",
+                    marginTop: 50,
+                    zIndex: 1,
                   }}
                 >
-                  {posts.map((post) => {
-                    return (
-                      <div style={{ height: 400, width: 300 }}>
-                        <img src={post.original} alt="" />
-                      </div>
-                    );
-                  })}
-                </OwlCarousel>
-              </div>
+                  <OwlCarousel
+                    ref={cars}
+                    items={5}
+                    merge
+                    autoWidth={false}
+                    className="owl-theme"
+                    loop
+                    dots={false}
+                    margin={20}
+                    responsive={{
+                      200: {
+                        items: 1,
+                        margin: 10,
+                        stagePadding: 20,
+                      },
+                      500: {
+                        items: 2,
+                        margin: 10,
+                        stagePadding: 20,
+                      },
+                      700: {
+                        items: 4,
+                        margin: 10,
+                        stagePadding: 10,
+                      },
+                    }}
+                  >
+                    {posts.map((post) => {
+                      return (
+                        <div style={{ height: 400, width: 300 }}>
+                          <img src={post.original} alt="" />
+                        </div>
+                      );
+                    })}
+                  </OwlCarousel>
+                </div>
+              ) : (
+                <p
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    color: "white",
+                    fontSize: 20,
+                  }}
+                >
+                  No posts found...
+                </p>
+              )
             ) : (
-              <div
+              <p
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -185,8 +223,8 @@ export default function SocialMediaSection() {
                   fontSize: 20,
                 }}
               >
-                <p>Loading...</p>
-              </div>
+                Loading....
+              </p>
             )}
           </div>
         </div>

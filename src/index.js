@@ -10,10 +10,17 @@ import { ToastContainer } from "react-toastify";
 
 import IndexView from "./views/IndexView";
 import reportWebVitals from "./reportWebVitals";
+import { Preloader, Placeholder } from "react-preloading-screen";
 
 ReactDOM.render(
   <React.StrictMode>
     <IndexView />
+    {/* <Preloader>
+      <IndexView />
+      <Placeholder>
+        <p style={{ fontSize: 26 }}>Loading...</p>
+      </Placeholder>
+    </Preloader> */}
     <ToastContainer />
   </React.StrictMode>,
   document.getElementById("root")
