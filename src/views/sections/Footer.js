@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
         <div className="w-col w-col-5">
           <div className="af-class-container-12 w-container">
-            <div className=" w-widget w-widget-map">
+            <div className=" w-widget w-widget-map map">
               <GoogleMapReact
                 bootstrapURLKeys={{
                   key: "AIzaSyBWdBiHpLdcEWCzQUu9irRM-L0TK0NUvTw",
@@ -118,7 +118,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="af-class-column-12 w-col w-col-6">
-          <div className="w-widget w-widget-map">
+          <div className="w-widget w-widget-map map">
             <GoogleMapReact
               defaultCenter={center}
               defaultZoom={zoom}

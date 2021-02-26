@@ -109,7 +109,7 @@ export default function AboutSection({ loading, data }) {
         <img
           src={!loading && data ? data.images[2] : Placeholder}
           loading="lazy"
-          width={512}
+          width="51%"
           style={{
             WebkitTransform:
               "translate3d(0, 40vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",

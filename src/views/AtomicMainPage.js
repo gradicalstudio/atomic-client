@@ -156,7 +156,7 @@ export default function AtomicMainPage() {
         </div>
 
         <Placeholder>
-          <p style={{ fontSize: 26, fontFamily: "sans-serif" }}>Loading...</p>
+          <span></span>
         </Placeholder>
       </Preloader>
     </div>

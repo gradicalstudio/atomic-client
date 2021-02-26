@@ -5,6 +5,7 @@ import $ from "jquery";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { isMobile } from "react-device-detect";
 
 export default function SocialMediaSection() {
   const [posts, setPosts] = useState(null);
@@ -87,6 +88,7 @@ export default function SocialMediaSection() {
                 "translate3d(0, 2vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
               transform:
                 "translate3d(0, 2vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
+              paddingTop: isMobile ? 25 : 20,
             }}
             className="af-class-text-block-16 af-class-ok"
           >
@@ -167,6 +169,7 @@ export default function SocialMediaSection() {
                   }}
                 >
                   <OwlCarousel
+                    style={{ height: isMobile ? 260 : 410 }}
                     ref={cars}
                     items={5}
                     merge
@@ -179,7 +182,7 @@ export default function SocialMediaSection() {
                       200: {
                         items: 1,
                         margin: 10,
-                        stagePadding: 20,
+                        stagePadding: 40,
                       },
                       500: {
                         items: 2,
@@ -187,15 +190,20 @@ export default function SocialMediaSection() {
                         stagePadding: 20,
                       },
                       700: {
-                        items: 4,
+                        items: 3,
                         margin: 10,
-                        stagePadding: 10,
+                        stagePadding: 100,
                       },
                     }}
                   >
                     {posts.map((post) => {
                       return (
-                        <div style={{ height: 400, width: 300 }}>
+                        <div
+                          style={{
+                            height: isMobile ? 260 : 410,
+                            width: isMobile ? 260 : 410,
+                          }}
+                        >
                           <img src={post.original} alt="" />
                         </div>
                       );

@@ -339,7 +339,7 @@ export default function EnquiryForm() {
                     type="submit"
                     className="af-class-submit-button w-button"
                   >
-                    {!isSubmitting ? "SUBMIT" : "Please wait..."}
+                    {!isSubmitting ? "GET IN TOUCH" : "Please wait..."}
                   </button>
                 </Form>
               );

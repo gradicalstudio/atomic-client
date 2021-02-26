@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
 import Placeholder from "../../images/PLACEHOLDER.jpg";
+import { isMobile } from "react-device-detect";
 
 export default function SpaceOverviewSection({ loading, data }) {
   const [currentTab, setCurrentTab] = useState("hotDesk");
@@ -119,7 +120,8 @@ export default function SpaceOverviewSection({ loading, data }) {
                 transform:
                   "translate3d(40px, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                 opacity: 0,
-                backgroundColor: "#f0f0f0",
+                backgroundColor: "white",
+                height: isMobile ? 40 : 60,
               }}
               className="af-class-tabs-menu-3 w-tab-menu"
             >
@@ -127,17 +129,18 @@ export default function SpaceOverviewSection({ loading, data }) {
                 onClick={() => setCurrentTab("hotDesk")}
                 // data-w-tab="Tab 1"
                 style={{
-                  backgroundColor:
-                    currentTab === "hotDesk" ? "black" : "#f0f0f0",
+                  backgroundColor: currentTab === "hotDesk" ? "black" : "white",
                   color: currentTab === "hotDesk" ? "white" : "black",
                   borderRadius: "50px",
                   outline: "none",
-                  width: "-webkit-fill-available",
+                  width: "30%",
+                  fontSize: isMobile ? 10 : 20,
 
-                  paddingRight: "16px",
+                  height: isMobile ? 38 : 52,
                   paddingLeft: "16px",
-                  paddingTop: "10px",
-                  paddingBottom: "10px",
+                  paddingRight: "16px",
+                  paddingTop: "5px",
+                  paddingBottom: "5px",
                 }}
               >
                 <div>Hot Desk</div>
@@ -147,16 +150,18 @@ export default function SpaceOverviewSection({ loading, data }) {
                 // data-w-tab="Tab 2"
                 style={{
                   backgroundColor:
-                    currentTab === "dedicatedDesk" ? "black" : "#f0f0f0",
+                    currentTab === "dedicatedDesk" ? "black" : "white",
                   color: currentTab === "dedicatedDesk" ? "white" : "black",
                   borderRadius: "50px",
                   outline: "none",
-                  width: "-webkit-fill-available",
+                  width: "40%",
+                  fontSize: isMobile ? 10 : 20,
 
+                  height: isMobile ? 38 : 52,
                   paddingRight: "16px",
                   paddingLeft: "16px",
-                  paddingTop: "10px",
-                  paddingBottom: "10px",
+                  paddingTop: "5px",
+                  paddingBottom: "5px",
                 }}
               >
                 <div>Dedicated Desk</div>
@@ -166,16 +171,19 @@ export default function SpaceOverviewSection({ loading, data }) {
                 // data-w-tab="Tab 3"
                 style={{
                   backgroundColor:
-                    currentTab === "privateDesk" ? "black" : "#f0f0f0",
+                    currentTab === "privateDesk" ? "black" : "white",
                   color: currentTab === "privateDesk" ? "white" : "black",
                   borderRadius: "50px",
                   outline: "none",
-                  width: "-webkit-fill-available",
+                  width: "40%",
+                  fontSize: isMobile ? 10 : 20,
+
+                  height: isMobile ? 38 : 52,
 
                   paddingRight: "16px",
                   paddingLeft: "16px",
-                  paddingTop: "10px",
-                  paddingBottom: "10px",
+                  paddingTop: "5px",
+                  paddingBottom: "5px",
                 }}
               >
                 <div>Private Desk</div>

@@ -64,7 +64,9 @@ export default function WhatsIncludedSection() {
               alt=""
               className="af-class-image-wiifi"
             />
-            <div className="af-class-text-block-20">High Speed Internet</div>
+            <div className="af-class-text-block-20" style={{ paddingTop: 13 }}>
+              High Speed Internet
+            </div>
           </div>
           <div
             id="w-node-_9ca38f5a-594b-e1f7-1272-85dba9ea2510-5cad7c33"

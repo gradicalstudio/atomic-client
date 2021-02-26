@@ -2630,7 +2630,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../images/Rectangle-46.svg");
+  /* background-image: url("../images/Rectangle-46.svg"); */
   background-position: 50% 50%;
   background-size: auto;
 }
@@ -2768,7 +2768,7 @@
   height: 600px;
   padding-right: 0px;
   padding-left: 0px;
-  background-image: url("../images/Private-office_2.jpg");
+  /* background-image: url("../images/Private-office_2.jpg"); */
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2949,7 +2949,7 @@
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-image: -webkit-gradient(
+    /* background-image: -webkit-gradient(
         linear,
         left top,
         left bottom,
@@ -2958,7 +2958,7 @@
       ),
       url("../images/Rooftop-cafe-1.jpg");
     background-image: linear-gradient(180deg, transparent, transparent),
-      url("../images/Rooftop-cafe-1.jpg");
+      url("../images/Rooftop-cafe-1.jpg"); */
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -3306,7 +3306,7 @@
     display: flex;
     width: 50%;
     padding: 93px;
-    background-image: url("../images/Hot-desk-ad-phone-booth.jpg");
+    /* background-image: url("../images/Hot-desk-ad-phone-booth.jpg"); */
     background-position: 50% 50%;
     background-size: cover;
   }
