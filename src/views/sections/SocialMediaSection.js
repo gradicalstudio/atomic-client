@@ -149,6 +149,23 @@ export default function SocialMediaSection() {
                   loop
                   dots={false}
                   margin={20}
+                  responsive={{
+                    200: {
+                      items: 1,
+                      margin: 10,
+                      stagePadding: 20,
+                    },
+                    500: {
+                      items: 2,
+                      margin: 10,
+                      stagePadding: 20,
+                    },
+                    700: {
+                      items: 4,
+                      margin: 10,
+                      stagePadding: 10,
+                    },
+                  }}
                 >
                   {posts.map((post) => {
                     return (
