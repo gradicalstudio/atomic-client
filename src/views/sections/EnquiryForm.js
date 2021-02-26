@@ -305,7 +305,7 @@ export default function EnquiryForm() {
                   >
                     <div
                       style={{
-                        width: isMobile ? "98%" : "100%",
+                        width: isMobile ? "98%" : "110%",
                         marginLeft: isMobile ? -10 : -20,
                         marginTop: isMobile ? 10 : 0,
                       }}
@@ -346,7 +346,7 @@ export default function EnquiryForm() {
             }}
           </Formik>
 
-          {isFormSubmitted ? (
+          {/* {isFormSubmitted ? (
             <div>
               <div
                 style={{
@@ -363,8 +363,8 @@ export default function EnquiryForm() {
                 Thank you! Your submission has been received!
               </div>
             </div>
-          ) : null}
-          {isFormSubmittingFailed ? (
+          ) : null} */}
+          {/* {isFormSubmittingFailed ? (
             <div>
               <div
                 style={{
@@ -381,7 +381,7 @@ export default function EnquiryForm() {
                 Oops! Something went wrong while submitting the form.
               </div>
             </div>
-          ) : null}
+          ) : null} */}
         </div>
       </div>
       <div
