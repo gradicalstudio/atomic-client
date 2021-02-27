@@ -10,19 +10,19 @@ import { isMobile } from "react-device-detect";
 export default function SocialMediaSection() {
   const [posts, setPosts] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [changeStatus, setChangeStatus] = useState(null);
   const cars = createRef();
 
   //theatomicspaces
 
   useEffect(() => {
     setLoading(true);
+
     $.instagramFeed({
       username: "ithub",
 
       get_data: true,
       callback: function (data) {
-        console.log("Insta Data", loading);
-
         setPosts(
           data.edge_owner_to_timeline_media.edges.map((el) => ({
             original: el.node.display_url,
@@ -33,7 +33,13 @@ export default function SocialMediaSection() {
         setLoading(false);
       },
     });
-  }, []);
+  }, [changeStatus]);
+
+  if (loading) {
+    setTimeout(() => {
+      setChangeStatus(Math.random());
+    }, 2000);
+  }
 
   // if (loading) {
   //   return (
@@ -193,6 +199,15 @@ export default function SocialMediaSection() {
                         items: 3,
                         margin: 10,
                         stagePadding: 100,
+                      },
+                      1000: {
+                        items: 3,
+                        margin: 10,
+                        stagePadding: 10,
+                      },
+                      1200: {
+                        items: 3,
+                        margin: 10,
                       },
                     }}
                   >
