@@ -38,7 +38,7 @@ export default function SocialMediaSection() {
   if (loading) {
     setTimeout(() => {
       setChangeStatus(Math.random());
-    }, 2000);
+    }, 500);
   }
 
   // if (loading) {
