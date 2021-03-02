@@ -89,7 +89,11 @@ const IndexView = () => {
       <span className="af-view">
         <div className="af-class-body">
           <AtomicMainPage />
-          <div id="luxy" className="af-class-sticky-book-a-tour">
+          <a
+            href="#book-a-tour"
+            id="luxy"
+            className="af-class-sticky-book-a-tour"
+          >
             <a
               href="#book-a-tour"
               className="af-class-link-block-3 w-inline-block"
@@ -102,7 +106,7 @@ const IndexView = () => {
               alt=""
               className="af-class-image-51"
             />
-          </div>
+          </a>
           <div data-w-id="Div Block 46" className="af-class-preloader" />
           {/* [if lte IE 9]><![endif] */}
         </div>

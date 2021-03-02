@@ -4,7 +4,7 @@ import Placeholder from "../../images/PLACEHOLDER.jpg";
 
 export default function AboutSection({ loading, data }) {
   return (
-    <section id="About" className="af-class-section-2">
+    <section id="About" className=" af-class-section-2">
       <div className="af-class-columns-2 w-row">
         <div className="af-class-column-2 w-col w-col-6">
           <div

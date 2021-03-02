@@ -73,6 +73,8 @@ export default function EnquiryForm() {
               additionalNotes: "",
             }}
             validationSchema={schema}
+            validateOnBlur={false}
+            validateOnChange={false}
             onSubmit={(values, form) => {
               console.log("Values", values);
 

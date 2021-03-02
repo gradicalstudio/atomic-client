@@ -158,8 +158,8 @@ export default function SpaceOverviewSection({ loading, data }) {
                   fontSize: isMobile ? 10 : 20,
 
                   height: isMobile ? 38 : 52,
-                  paddingRight: "16px",
-                  paddingLeft: "16px",
+                  paddingRight: isMobile ? 0 : 10,
+                  paddingLeft: isMobile ? 0 : 10,
                   paddingTop: "5px",
                   paddingBottom: "5px",
                 }}

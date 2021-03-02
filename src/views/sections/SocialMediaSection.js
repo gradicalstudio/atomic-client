@@ -6,6 +6,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { isMobile } from "react-device-detect";
+import { toast } from "react-toastify";
 
 export default function SocialMediaSection() {
   const [posts, setPosts] = useState(null);
@@ -18,8 +19,15 @@ export default function SocialMediaSection() {
   useEffect(() => {
     setLoading(true);
 
+    console.log("Insta data fetching");
+
     $.instagramFeed({
       username: "ithub",
+      on_error: (error) => {
+        console.log("Insta errro", error);
+        toast.error(error);
+      },
+      display_gallery: true,
 
       get_data: true,
       callback: function (data) {
@@ -38,23 +46,8 @@ export default function SocialMediaSection() {
   if (loading) {
     setTimeout(() => {
       setChangeStatus(Math.random());
-    }, 500);
+    }, 1000);
   }
-
-  // if (loading) {
-  //   return (
-  //     <div
-  //       style={{
-  //         display: "flex",
-  //         justifyContent: "center",
-  //         color: "white",
-  //         fontSize: 20,
-  //       }}
-  //     >
-  //       <p>Loading...</p>
-  //     </div>
-  //   );
-  // }
 
   return (
     <div>
@@ -125,7 +118,7 @@ export default function SocialMediaSection() {
                 <img
                   src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d134a8845b9c9f0f85_Ellipse%202.svg"
                   loading="lazy"
-                  width={58}
+                  width={70}
                   alt=""
                 />
                 <div className="af-class-button-arrow">
@@ -148,7 +141,7 @@ export default function SocialMediaSection() {
                 <img
                   src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d0f37b56ef07d80cfb_Ellipse%201.svg"
                   loading="lazy"
-                  width={59}
+                  width={70}
                   alt=""
                 />
                 <div className="af-class-button-arrow">
@@ -231,7 +224,7 @@ export default function SocialMediaSection() {
                     display: "flex",
                     justifyContent: "center",
                     color: "white",
-                    fontSize: 20,
+                    fontSize: isMobile ? 14 : 20,
                   }}
                 >
                   No posts found...
