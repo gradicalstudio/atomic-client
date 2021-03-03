@@ -43,12 +43,6 @@ export default function SocialMediaSection() {
     });
   }, [changeStatus]);
 
-  if (loading) {
-    setTimeout(() => {
-      setChangeStatus(Math.random());
-    }, 1000);
-  }
-
   return (
     <div>
       <div
