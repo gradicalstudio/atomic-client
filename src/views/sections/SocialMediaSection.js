@@ -11,7 +11,6 @@ import { toast } from "react-toastify";
 export default function SocialMediaSection() {
   const [posts, setPosts] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [changeStatus, setChangeStatus] = useState(null);
   const cars = createRef();
 
   //theatomicspaces
@@ -41,7 +40,7 @@ export default function SocialMediaSection() {
         setLoading(false);
       },
     });
-  }, [changeStatus]);
+  }, []);
 
   return (
     <div>
