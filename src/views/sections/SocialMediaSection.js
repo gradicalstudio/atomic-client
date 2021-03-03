@@ -13,7 +13,7 @@ export default function SocialMediaSection() {
   const [loading, setLoading] = useState(false);
   const cars = createRef();
 
-  //theatomicspaces
+  //theatomic.space
 
   useEffect(() => {
     setLoading(true);
@@ -21,7 +21,7 @@ export default function SocialMediaSection() {
     console.log("Insta data fetching");
 
     $.instagramFeed({
-      username: "ithub",
+      username: "theatomic.space",
       on_error: (error) => {
         console.log("Insta errro", error);
         toast.error(error);
@@ -106,7 +106,7 @@ export default function SocialMediaSection() {
             onClick={() => cars.current.prev()}
             style={{ cursor: "pointer", zIndex: 10 }}
           >
-            {posts ? (
+            {posts && posts.length > 0 ? (
               <div className="af-class-button-bg-color">
                 <img
                   src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d134a8845b9c9f0f85_Ellipse%202.svg"
@@ -129,7 +129,7 @@ export default function SocialMediaSection() {
             onClick={() => cars.current.next()}
             style={{ cursor: "pointer", zIndex: 10 }}
           >
-            {posts ? (
+            {posts && posts.length > 0 ? (
               <div className="af-class-button-bg-color af-class-custom">
                 <img
                   src="https://uploads-ssl.webflow.com/6027b8e27df225a359218561/602984d0f37b56ef07d80cfb_Ellipse%201.svg"

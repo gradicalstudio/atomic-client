@@ -7,6 +7,40 @@ import { format } from "date-fns";
 import { toast } from "react-toastify";
 import { isMobile } from "react-device-detect";
 
+const booksASpaceSeats = [
+  {
+    label: "Just Myself",
+    value: "Just Myself",
+  },
+  {
+    label: "2-10 Seats",
+    value: "2-10 Seats",
+  },
+  {
+    label: "11-15 Seats",
+    value: "11-15 Seats",
+  },
+  {
+    label: "50+",
+    value: "50+",
+  },
+];
+
+const runAnEventSeats = [
+  {
+    label: "Terrace (80+ seats)",
+    value: "Terrace (80+ seats)",
+  },
+  {
+    label: "Indoor (80 seats)",
+    value: "Indoor (80 seats)",
+  },
+  {
+    label: "Board room (10 seats)",
+    value: "Board room (10 seats)",
+  },
+];
+
 const schema = Yup.object().shape({
   fullName: Yup.string().nullable().required("Required"),
   email: Yup.string().nullable().required("Required"),
@@ -18,8 +52,6 @@ const schema = Yup.object().shape({
 
 export default function EnquiryForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [isFormSubmittingFailed, setIsFormSubmittingFailed] = useState(false);
   return (
     <div
       id="book-a-tour"
@@ -109,10 +141,6 @@ export default function EnquiryForm() {
                   data-name="enquiry form"
                   method="get"
                   className="af-class-form"
-                  onFocus={() => {
-                    setIsFormSubmitted(false);
-                    setIsFormSubmittingFailed(false);
-                  }}
                 >
                   <div className="af-class-columns-6 w-row">
                     <div className="af-class-form-text w-col w-col-6">
@@ -175,10 +203,6 @@ export default function EnquiryForm() {
                             {
                               label: "Book a space",
                               value: "Book a space",
-                            },
-                            {
-                              label: "Community Related",
-                              value: "Community Related",
                             },
                           ]}
                           component={(props) => (
@@ -253,24 +277,11 @@ export default function EnquiryForm() {
                       <div style={{ width: "96%" }}>
                         <Field
                           name="noOfSeats"
-                          options={[
-                            {
-                              label: "Just Myself",
-                              value: "Just Myself",
-                            },
-                            {
-                              label: "2-10 Seats",
-                              value: "2-10 Seats",
-                            },
-                            {
-                              label: "11-15 Seats",
-                              value: "11-15 Seats",
-                            },
-                            {
-                              label: "50+",
-                              value: "50+",
-                            },
-                          ]}
+                          options={
+                            values.requirement === "Book a space"
+                              ? booksASpaceSeats
+                              : runAnEventSeats
+                          }
                           component={(props) => (
                             <CustomStyledSelect
                               {...props}
