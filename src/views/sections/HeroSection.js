@@ -3,6 +3,7 @@ import BackgroundSlider from "react-background-slider";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
 import { isMobile } from "react-device-detect";
 import Placeholder from "../../images/PLACEHOLDER.jpg";
+import Logo from "../../images/The Atomic Big.svg";
 
 const HeroSection = ({ loading, data }) => {
   return (
@@ -73,7 +74,7 @@ const HeroSection = ({ loading, data }) => {
           />
           <div className="af-class-hero-text-holder">
             <img
-              src="images/ARROW-LOGO.svg"
+              src={Logo}
               loading="lazy"
               width={1320}
               data-w-id="947a1079-f298-0995-1c23-9233cb87d024"
@@ -84,10 +85,12 @@ const HeroSection = ({ loading, data }) => {
               BOOK A TOUR
             </a>
           </div>
-          <h2 data-w-id="Heading" className="af-class-hero-sub-text">
+          <h2
+            data-w-id="Heading"
+            className="af-class-hero-sub-text"
+            style={{ fontSize: isMobile ? 28 : 36 }}
+          >
             {!loading && data ? data.heroSubTitle : <LoadingSkeleton />}
-            {/* <br />
-            Designed for today’s creative, mobile and entrepreneurial minds. */}
           </h2>
           <a href="#About" className="af-class-scroll-button w-inline-block">
             <img

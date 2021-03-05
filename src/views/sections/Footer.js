@@ -37,10 +37,19 @@ export default function Footer() {
           <div className="af-class-text-block-17 af-class-footer af-class-small">
             Follow us on
           </div>
-          <div className="w-layout-grid af-class-grid-16">
-            <div
-              id="w-node-div-block-38-5cad7c33"
+          <div
+            className="w-layout-grid"
+            style={{
+              display: "flex",
+              gap: 70,
+              paddingTop: 20,
+              paddingBottom: 20,
+            }}
+          >
+            <a
+              id="w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33"
               className="af-class-div-block-40"
+              href="https://www.instagram.com/theatomic.space/"
             >
               <img
                 src="images/Vector-2.svg"
@@ -49,10 +58,11 @@ export default function Footer() {
                 alt=""
                 className="af-class-image-40"
               />
-            </div>
-            <div
-              id="w-node-_76731110-5274-10c6-b10e-fec530626f1c-5cad7c33"
+            </a>
+            <a
+              id="w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33"
               className="af-class-div-block-40"
+              href="https://www.facebook.com/The-Atomic-110576397747050"
             >
               <img
                 src="images/Vector-3.svg"
@@ -61,22 +71,12 @@ export default function Footer() {
                 alt=""
                 className="af-class-image-40"
               />
-            </div>
-            <div
-              id="w-node-_333c37bd-74fd-6ab3-95e3-d3c7403553df-5cad7c33"
+            </a>
+
+            <a
+              id="w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33"
               className="af-class-div-block-40"
-            >
-              <img
-                src="images/Vector-1.svg"
-                loading="lazy"
-                width={24}
-                alt=""
-                className="af-class-image-40"
-              />
-            </div>
-            <div
-              id="w-node-_0f721f33-fe87-8475-9918-fb38dc28b2f2-5cad7c33"
-              className="af-class-div-block-40"
+              href="https://www.linkedin.com/company/theatomic/"
             >
               <img
                 src="images/Vector.svg"
@@ -85,7 +85,7 @@ export default function Footer() {
                 alt=""
                 className="af-class-image-40"
               />
-            </div>
+            </a>
           </div>
           <div className="af-class-text-block-17">
             © 2021 The Atomic - All Rights Reserved
@@ -96,12 +96,16 @@ export default function Footer() {
             <div className=" w-widget w-widget-map map">
               <GoogleMapReact
                 bootstrapURLKeys={{
-                  key: "AIzaSyBWdBiHpLdcEWCzQUu9irRM-L0TK0NUvTw",
+                  key: "AIzaSyBck02tfirK1mkwoR-ScPttKfhS-dBoivE",
                 }}
                 defaultCenter={center}
                 defaultZoom={zoom}
               >
-                <div lat={59.955413} lng={30.337844} text="My Marker" />
+                <div
+                  lat={8.556269645690918}
+                  lng={76.87676239013672}
+                  text="My Marker"
+                />
               </GoogleMapReact>
             </div>
 
@@ -120,11 +124,18 @@ export default function Footer() {
         <div className="af-class-column-12 w-col w-col-6">
           <div className="w-widget w-widget-map map">
             <GoogleMapReact
+              bootstrapURLKeys={{
+                key: "AIzaSyBck02tfirK1mkwoR-ScPttKfhS-dBoivE",
+              }}
               defaultCenter={center}
               defaultZoom={zoom}
               style={{ height: 100, width: 100 }}
             >
-              <div lat={59.955413} lng={30.337844} text="My Marker" />
+              <div
+                lat={8.556269645690918}
+                lng={76.87676239013672}
+                text="My Marker"
+              />
             </GoogleMapReact>
           </div>
           <div className="af-class-text-block-17 af-class-footer">
@@ -143,10 +154,19 @@ export default function Footer() {
             alt=""
             className="af-class-image-39"
           />
-          <div className="w-layout-grid af-class-grid-16">
-            <div
+          <div
+            className="w-layout-grid"
+            style={{
+              display: "flex",
+              gap: 45,
+              paddingTop: 20,
+              paddingBottom: 20,
+            }}
+          >
+            <a
               id="w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833ef-5cad7c33"
               className="af-class-div-block-40"
+              href="https://www.instagram.com/theatomic.space/"
             >
               <img
                 src="images/Vector-2.svg"
@@ -155,10 +175,11 @@ export default function Footer() {
                 alt=""
                 className="af-class-image-40"
               />
-            </div>
-            <div
+            </a>
+            <a
               id="w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f1-5cad7c33"
               className="af-class-div-block-40"
+              href="https://www.facebook.com/The-Atomic-110576397747050"
             >
               <img
                 src="images/Vector-3.svg"
@@ -167,22 +188,12 @@ export default function Footer() {
                 alt=""
                 className="af-class-image-40"
               />
-            </div>
-            <div
-              id="w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f3-5cad7c33"
-              className="af-class-div-block-40"
-            >
-              <img
-                src="images/Vector-1.svg"
-                loading="lazy"
-                width={24}
-                alt=""
-                className="af-class-image-40"
-              />
-            </div>
-            <div
+            </a>
+
+            <a
               id="w-node-_14c0a8ef-0ad5-2bc5-ab44-de73975833f5-5cad7c33"
               className="af-class-div-block-40"
+              href="https://www.linkedin.com/company/theatomic/"
             >
               <img
                 src="images/Vector.svg"
@@ -191,7 +202,7 @@ export default function Footer() {
                 alt=""
                 className="af-class-image-40"
               />
-            </div>
+            </a>
           </div>
           <div className="af-class-text-block-17">
             © 2021 The Atomic - All Rights Reserved

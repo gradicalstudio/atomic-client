@@ -112,7 +112,7 @@ const CustomSelect = ({
 
       placeholder: (provided, state) => ({
         ...provided,
-        fontSize: 20,
+        fontSize: isMobile ? 14 : 20,
         // color: "#a0aec0",
       }),
       valueContainer: (provided, state) => ({
@@ -198,7 +198,10 @@ const CustomSelect = ({
         />
       ) : (
         <div
-          style={{ borderStyle: isMobile ? "none" : "solid", borderWidth: 2 }}
+          style={{
+            borderStyle: isMobile ? "none" : "solid",
+            borderWidth: 2,
+          }}
         >
           <Select
             className={`flex-auto lg:inline-block text-black focus:outline-none ${className}`}

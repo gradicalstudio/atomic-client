@@ -108,7 +108,7 @@ export default function RunYourEventSection({ loading, data }) {
                 }
               }}
               data-w-id="7908f217-5ab8-d52b-70eb-9d8c729443cb"
-              style={{ backgroundColor: "rgb(255,255,255)" }}
+              style={{ backgroundColor: "rgb(255,255,255)", outline: "none" }}
               className="af-class-div-block-54 af-class-right"
             >
               <img
@@ -137,6 +137,7 @@ export default function RunYourEventSection({ loading, data }) {
                 }
               }}
               className="af-class-div-block-54 af-class-left"
+              style={{ outline: "none" }}
             >
               <img
                 src="images/left.svg"

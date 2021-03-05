@@ -152,7 +152,7 @@ export default function EnquiryForm() {
                           width: "96%",
                           marginBottom: 10,
                           padding: 20,
-                          fontSize: 20,
+                          fontSize: isMobile ? 14 : 20,
                           borderStyle: isMobile ? "none" : "solid",
                           borderColor: "black",
                         }}
@@ -178,7 +178,7 @@ export default function EnquiryForm() {
                           width: "96%",
                           marginBottom: 10,
                           padding: 20,
-                          fontSize: 20,
+                          fontSize: isMobile ? 14 : 20,
                           borderStyle: isMobile ? "none" : "solid",
                           borderColor: "black",
                         }}
@@ -239,7 +239,7 @@ export default function EnquiryForm() {
                           width: "96%",
                           marginBottom: 10,
                           padding: 20,
-                          fontSize: 20,
+                          fontSize: isMobile ? 14 : 20,
                           borderStyle: isMobile ? "none" : "solid",
                           borderColor: "black",
                         }}
@@ -261,7 +261,7 @@ export default function EnquiryForm() {
                           width: "96%",
                           marginBottom: 10,
                           padding: 20,
-                          fontSize: 20,
+                          fontSize: isMobile ? 14 : 20,
                           borderStyle: isMobile ? "none" : "solid",
                           borderColor: "black",
                         }}
@@ -329,9 +329,10 @@ export default function EnquiryForm() {
                           width: "100%",
                           marginBottom: 10,
                           padding: 20,
-                          fontSize: 20,
+                          fontSize: isMobile ? 14 : 20,
                           borderStyle: isMobile ? "none" : "solid",
                           borderColor: "black",
+                          borderWidth: 3,
                         }}
                         rows={6}
                         placeholder="Additional Notes"
@@ -341,16 +342,12 @@ export default function EnquiryForm() {
                       />
                     </div>
                   </div>
-                  {/* <input
-                    type="submit"
-                    defaultValue="GET IN TOUCH"
-                    data-wait="Please wait..."
-                    className="af-class-submit-button w-button"
-                  /> */}
+
                   <button
                     disabled={isSubmitting}
                     type="submit"
                     className="af-class-submit-button w-button"
+                    style={{ outline: "none" }}
                   >
                     {!isSubmitting ? "GET IN TOUCH" : "Please wait..."}
                   </button>

@@ -134,11 +134,11 @@ export default function SpaceOverviewSection({ loading, data }) {
                   borderRadius: "50px",
                   outline: "none",
                   width: "30%",
-                  fontSize: isMobile ? 10 : 20,
+                  fontSize: isMobile ? 12 : 20,
 
                   height: isMobile ? 38 : 52,
-                  paddingLeft: "16px",
-                  paddingRight: "16px",
+                  paddingRight: isMobile ? 0 : 10,
+                  paddingLeft: isMobile ? 0 : 10,
                   paddingTop: "5px",
                   paddingBottom: "5px",
                 }}
@@ -155,7 +155,7 @@ export default function SpaceOverviewSection({ loading, data }) {
                   borderRadius: "50px",
                   outline: "none",
                   width: "40%",
-                  fontSize: isMobile ? 10 : 20,
+                  fontSize: isMobile ? 12 : 20,
 
                   height: isMobile ? 38 : 52,
                   paddingRight: isMobile ? 0 : 10,
@@ -176,12 +176,12 @@ export default function SpaceOverviewSection({ loading, data }) {
                   borderRadius: "50px",
                   outline: "none",
                   width: "40%",
-                  fontSize: isMobile ? 10 : 20,
+                  fontSize: isMobile ? 12 : 20,
 
                   height: isMobile ? 38 : 52,
 
-                  paddingRight: "16px",
-                  paddingLeft: "16px",
+                  paddingRight: isMobile ? 0 : 10,
+                  paddingLeft: isMobile ? 0 : 10,
                   paddingTop: "5px",
                   paddingBottom: "5px",
                 }}
