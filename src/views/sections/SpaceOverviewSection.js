@@ -101,7 +101,13 @@ export default function SpaceOverviewSection({ loading, data }) {
                   className="af-class-text-block-19"
                 >
                   COVID-19 Precautions are enabled at our spaces.{" "}
-                  <a href="#" className="af-class-link-3">
+                  <a
+                    href="https://drive.google.com/file/d/1ZqQTM8tsQgKyFmaPugL8W_RoD8n0qgPO/view?usp=sharing"
+                    className="af-class-link-3"
+                    download
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Download the manual.
                   </a>
                 </div>
