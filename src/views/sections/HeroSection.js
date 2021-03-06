@@ -3,7 +3,7 @@ import BackgroundSlider from "react-background-slider";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
 import { isMobile } from "react-device-detect";
 import Placeholder from "../../images/PLACEHOLDER.jpg";
-import Logo from "../../images/The Atomic Big.svg";
+import Logo from "../../images/HERO_SVG.svg";
 
 const HeroSection = ({ loading, data }) => {
   return (

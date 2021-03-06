@@ -67,7 +67,7 @@ export default function SocialMediaSection() {
             Our Social
           </h1>
           <a
-            href="https://www.instagram.com/theatomicspaces"
+            href="https://www.instagram.com/theatomic.space/"
             target="_blank"
             rel="noreferrer"
             style={{
