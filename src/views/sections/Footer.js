@@ -94,9 +94,9 @@ export default function Footer() {
         <div className="w-col w-col-5">
           <div className="af-class-container-12 w-container">
             <div className=" w-widget w-widget-map map">
-              <GoogleMapReact
+              {/* <GoogleMapReact
                 bootstrapURLKeys={{
-                  key: "AIzaSyBck02tfirK1mkwoR-ScPttKfhS-dBoivE",
+                  key: "AIzaSyDlQ81Hk2i5LQD9TLNa6vDIkpoRxwzbVvQ",
                 }}
                 defaultCenter={center}
                 defaultZoom={zoom}
@@ -106,7 +106,7 @@ export default function Footer() {
                   lng={76.87676239013672}
                   text="My Marker"
                 />
-              </GoogleMapReact>
+              </GoogleMapReact> */}
             </div>
 
             <div className="af-class-div-block-41">
@@ -122,27 +122,26 @@ export default function Footer() {
           </div>
         </div>
         <div className="af-class-column-12 w-col w-col-6">
-          <div className="w-widget w-widget-map map">
-            <GoogleMapReact
-              bootstrapURLKeys={{
-                key: "AIzaSyBck02tfirK1mkwoR-ScPttKfhS-dBoivE",
-              }}
-              defaultCenter={center}
-              defaultZoom={zoom}
-              style={{ height: 100, width: 100 }}
-            >
-              <div
-                lat={8.556269645690918}
-                lng={76.87676239013672}
-                text="My Marker"
-              />
-            </GoogleMapReact>
+          {/* <GoogleMapReact
+            bootstrapURLKeys={{
+              key: "AIzaSyDlQ81Hk2i5LQD9TLNa6vDIkpoRxwzbVvQ",
+            }}
+            defaultCenter={center}
+            defaultZoom={zoom}
+            style={{ height: 100, width: 100 }}
+          >
+            <div
+              lat={8.556269645690918}
+              lng={76.87676239013672}
+              text="My Marker"
+            />
+          </GoogleMapReact> */}
+          <div className="w-widget w-widget-map map"></div>
+          <div className="af-class-text-block-17 af-class-footer">
+            Reach us at +91 85902 42448
           </div>
           <div className="af-class-text-block-17 af-class-footer">
-            Reach us at +91 123 456 7890
-          </div>
-          <div className="af-class-text-block-17 af-class-footer">
-            or Mail at hi@atomic.space
+            or Mail at hey@theatomic.space
           </div>
           <div className="af-class-text-block-17 af-class-footer af-class-text">
             Kazhakootam, Near Technopark Phase 1, <br />
