@@ -19,7 +19,7 @@ export default function Footer() {
             className="af-class-image-39 af-class-the-atoic"
           />
           <div className="af-class-text-block-17 af-class-footer">
-            Reach us at +91 85902 42448
+            Reach us at +91 85902 42448 or +91 94964 34303
           </div>
           <div className="af-class-text-block-17 af-class-footer">
             or Mail at{" "}
@@ -138,7 +138,7 @@ export default function Footer() {
           </GoogleMapReact> */}
           <div className="w-widget w-widget-map map"></div>
           <div className="af-class-text-block-17 af-class-footer">
-            Reach us at +91 85902 42448
+            Reach us at +91 85902 42448 or
           </div>
           <div className="af-class-text-block-17 af-class-footer">
             or Mail at hey@theatomic.space
