@@ -40,7 +40,7 @@ export default function Footer() {
             Kazhakootam, Near Technopark Phase 1, <br />
             695022, Trivandrum, Kerala.
           </div>
-          <div className="af-class-text-block-17 af-class-footer af-class-small">
+          {/* <div className="af-class-text-block-17 af-class-footer af-class-small">
             Follow us on
           </div>
           <div
@@ -92,7 +92,7 @@ export default function Footer() {
                 className="af-class-image-40"
               />
             </a>
-          </div>
+          </div> */}
           <div className="af-class-text-block-17">
             © 2021 The Atomic - All Rights Reserved
           </div>
@@ -165,7 +165,7 @@ export default function Footer() {
             alt=""
             className="af-class-image-39"
           />
-          <div
+          {/* <div
             className="w-layout-grid"
             style={{
               display: "flex",
@@ -214,7 +214,7 @@ export default function Footer() {
                 className="af-class-image-40"
               />
             </a>
-          </div>
+          </div> */}
           <div className="af-class-text-block-17">
             © 2021 The Atomic - All Rights Reserved
           </div>
