@@ -109,24 +109,40 @@ export default function EnquiryForm() {
             validateOnChange={false}
             onSubmit={(values, form) => {
               console.log("Values", values);
-
               setIsSubmitting(true);
+
               db.collection("enquiries")
                 .add({
                   ...values,
                   createdAt: format(new Date(), "PPP"),
                   status: true,
+                  to: "hey@theatomic.space",
+                  message: {
+                    subject: "You have received a new enquiry",
+                    text: "You have received a new enquiry.",
+                    html: `
+                    You have received a new enquiry.<br><br>
+                    Full Name : ${values.fullName}<br>
+                      Email : ${values.email}<br>
+                      Phone Number : ${values.phoneNumber}<br>
+                      Company Name : ${values.companyName}<br>
+                      Requirement : ${values.requirement}<br>
+                      Number of Seats : ${values.noOfSeats}<br>
+                      Additional Notes : ${
+                        values.additionalNotes ? values.additionalNotes : "N/A"
+                      }<br>
+                      `,
+                  },
                 })
                 .then(() => {
                   setIsSubmitting(false);
-                  // setIsFormSubmitted(true);
+
                   toast.success(
                     "Thanks for submitting, we’ll get in touch with you soon."
                   );
                   form.resetForm();
                 })
                 .catch((error) => {
-                  // setIsFormSubmittingFailed(true);
                   toast.error("Failed to submit enquiry");
                   console.log(error);
                 });

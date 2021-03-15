@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "date-fns": "^2.17.0",
     "firebase": "^8.2.8",
+    "firebase-admin": "^9.5.0",
     "firebase-tools": "^9.4.0",
     "formik": "^2.2.6",
     "google-map-react": "^2.1.9",
