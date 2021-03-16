@@ -45,7 +45,7 @@ const schema = Yup.object().shape({
   fullName: Yup.string().nullable().required("Required"),
   email: Yup.string().nullable().required("Required"),
   phoneNumber: Yup.string().nullable().required("Required"),
-  companyName: Yup.string().nullable().required("Required"),
+  // companyName: Yup.string().nullable().required("Required"),
   requirement: Yup.string().nullable().required("Required"),
   noOfSeats: Yup.string().nullable().required("Required"),
 });
@@ -255,7 +255,7 @@ export default function EnquiryForm() {
                       <Field
                         maxLength={256}
                         name="companyName"
-                        placeholder="Company Name*"
+                        placeholder="Company Name"
                         id="node-2"
                         style={{
                           width: "96%",
