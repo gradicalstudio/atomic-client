@@ -98,6 +98,7 @@ const CustomSelect = ({
         [padded ? "paddingLeft" : null]: "1.5rem",
         [Icon ? "paddingLeft" : null]: "32px",
         border: "none",
+        borderRadius: 0,
       }),
       option: (provided, state) => ({
         ...provided,
