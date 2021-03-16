@@ -332,7 +332,7 @@ export default function EnquiryForm() {
                           fontSize: isMobile ? 14 : 20,
                           borderStyle: isMobile ? "none" : "solid",
                           borderColor: "black",
-                          borderWidth: 3,
+                          borderWidth: 2,
                         }}
                         rows={6}
                         placeholder="Additional Notes"
