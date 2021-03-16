@@ -10,6 +10,7 @@ import SocialMediaSection from "./sections/SocialMediaSection";
 import Footer from "./sections/Footer";
 import { db } from "../firebase";
 import { Preloader, Placeholder } from "react-preloading-screen";
+import getBlobComponent from "./BlobComponent";
 
 export default function AtomicMainPage() {
   const [loading, setLoading] = useState(false);
@@ -25,6 +26,9 @@ export default function AtomicMainPage() {
     setLoading(false);
     setPageData(res.data());
   };
+
+  const RunYourEventSectionBlob = getBlobComponent(RunYourEventSection);
+  const SpaceOverviewSectionBlob = getBlobComponent(SpaceOverviewSection);
 
   useEffect(() => {
     fetchAtomicPageDetails();
@@ -42,12 +46,12 @@ export default function AtomicMainPage() {
             loading={loading}
             data={pageData ? pageData.aboutSection : null}
           />
-          <SpaceOverviewSection
+          <SpaceOverviewSectionBlob
             loading={loading}
             data={pageData ? pageData.spaceOverviewSection : null}
           />
           <WhatsIncludedSection />
-          <RunYourEventSection
+          <RunYourEventSectionBlob
             loading={loading}
             data={pageData ? pageData.runYourEvent : null}
           />
