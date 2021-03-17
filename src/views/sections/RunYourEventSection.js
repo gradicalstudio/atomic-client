@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LoadingSkeleton from "../../components/LoadingSkeleton";
 import { isMobile } from "react-device-detect";
 import Placeholder from "../../images/PLACEHOLDER.jpg";
 
 export default function RunYourEventSection({ loading, data }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   return (
     <div className="af-class-section-5">
       <div data-w-id="Row 2" className="af-class-columns-3 w-row">
         <div data-w-id="Column_1 2" className="af-class-column-4 w-col w-col-6">
           <h1
             style={{
-              opacity: 0,
+              opacity: 1,
               WebkitTransform:
                 "translate3d(0, 2vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
               MozTransform:
@@ -27,7 +28,7 @@ export default function RunYourEventSection({ loading, data }) {
           </h1>
           <h4
             style={{
-              opacity: 0,
+              opacity: 1,
               WebkitTransform:
                 "translate3d(0, 2vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
               MozTransform:
@@ -48,7 +49,7 @@ export default function RunYourEventSection({ loading, data }) {
             href="#book-a-tour"
             data-w-id="056229b1-3df5-62af-bcbe-42849fad36e8"
             style={{
-              opacity: 0,
+              opacity: 1,
               WebkitTransform:
                 "translate3d(0, 2vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
               MozTransform:
@@ -74,13 +75,6 @@ export default function RunYourEventSection({ loading, data }) {
               alt=""
               className="af-class-image-37 af-class-blackarrow"
             />
-            <img
-              src="images/ARROW.svg"
-              loading="lazy"
-              data-w-id="87861ede-c820-cbd2-d8d7-563042229b64"
-              alt=""
-              className="af-class-image-66"
-            />
           </a>
         </div>
         <div data-w-id="Column_2 3" className="af-class-column-5 w-col w-col-6">
@@ -94,7 +88,7 @@ export default function RunYourEventSection({ loading, data }) {
                 "translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
               transform:
                 "translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-              opacity: 0,
+              opacity: 1,
             }}
             className="af-class-container-17 w-container"
           >

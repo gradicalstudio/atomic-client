@@ -2993,7 +2993,7 @@
 
   .af-view .af-class-section-2 {
     display: block;
-    height: 83rem;
+    height: 100rem;
     padding-top: 39px;
   }
 
@@ -5203,12 +5203,12 @@
   }
 
   .af-view .af-class-image-37.af-class-blackarrow {
-    position: absolute;
-    left: 220px;
-    top: auto;
+    /* position: absolute;
+    left: 220px; 
+    top: auto;*/
     display: block;
     width: 8%;
-    margin-left: 0px;
+    /* margin-left: 0px; */
   }
 
   .af-view .af-class-loop-text-inner {
@@ -6737,7 +6737,7 @@
   }
 
   .af-view .af-class-column-13 {
-    height: 720px;
+    height: 750px;
     background-color: #eceaeb;
   }
 
@@ -6753,7 +6753,7 @@
   }
 
   .af-view .af-class-column-14 {
-    height: 720px;
+    height: 750px;
     padding-top: 106px;
     padding-bottom: 106px;
   }
