@@ -424,7 +424,7 @@ export default function EnquiryForm() {
         }}
         className="af-class-text-block-18 af-class-mobile-view-1"
       >
-        YOU CAN ALSO REACH US BY PHONE — CALL US AT +91 85902 42448
+        YOU CAN ALSO REACH US BY PHONE — CALL US AT +91 94964 34303
       </div>
     </div>
   );
