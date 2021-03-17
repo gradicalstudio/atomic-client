@@ -19,7 +19,13 @@ export default function Footer() {
             className="af-class-image-39 af-class-the-atoic"
           />
           <div className="af-class-text-block-17 af-class-footer">
-            Reach us at +91 85902 42448
+            Reach us at +91 85902 42448 or
+          </div>
+          <div
+            className="af-class-text-block-17 af-class-footer"
+            style={{ paddingTop: 5, paddingBottom: 20 }}
+          >
+            <p>+91 94964 34303</p>
           </div>
           <div className="af-class-text-block-17 af-class-footer">
             or Mail at{" "}
@@ -34,7 +40,7 @@ export default function Footer() {
             Kazhakootam, Near Technopark Phase 1, <br />
             695022, Trivandrum, Kerala.
           </div>
-    {/*       <div className="af-class-text-block-17 af-class-footer af-class-small">
+          {/* <div className="af-class-text-block-17 af-class-footer af-class-small">
             Follow us on
           </div>
           <div
@@ -138,7 +144,13 @@ export default function Footer() {
           </GoogleMapReact> */}
           <div className="w-widget w-widget-map map"></div>
           <div className="af-class-text-block-17 af-class-footer">
-            Reach us at +91 85902 42448
+            Reach us at +91 85902 42448 or
+          </div>
+          <div
+            className="af-class-text-block-17 af-class-footer"
+            style={{ marginTop: -10 }}
+          >
+            <p>+91 94964 34303</p>
           </div>
           <div className="af-class-text-block-17 af-class-footer">
             or Mail at hey@theatomic.space
@@ -153,7 +165,7 @@ export default function Footer() {
             alt=""
             className="af-class-image-39"
           />
-          <div
+          {/* <div
             className="w-layout-grid"
             style={{
               display: "flex",
@@ -202,7 +214,7 @@ export default function Footer() {
                 className="af-class-image-40"
               />
             </a>
-          </div>
+          </div> */}
           <div className="af-class-text-block-17">
             © 2021 The Atomic - All Rights Reserved
           </div>

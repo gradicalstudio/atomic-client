@@ -4771,8 +4771,12 @@
     justify-content: flex-start;
     font-size: 1.7vw;
     line-height: 1.2em;
+<<<<<<< HEAD
     font-family: "Scto grotesk b", sans-serif;
     font-weight: 300;
+=======
+    font-weight: 400;
+>>>>>>> f50131fbd944e7595d6741e6d30a5b41d3024cb7
   }
 
   .af-view .af-class-para-2 {
@@ -7717,8 +7721,12 @@
     width: 100%;
     margin-left: 0px;
     font-size: 3vw;
+<<<<<<< HEAD
     font-family: "Scto grotesk b", sans-serif;
     font-weight: 300;
+=======
+    font-weight: 400;
+>>>>>>> f50131fbd944e7595d6741e6d30a5b41d3024cb7
   }
 
   .af-view .af-class-para-2 {
