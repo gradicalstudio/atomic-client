@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer id="Footer" className="af-class-section-11">
       <div className="af-class-columns-5 w-row">
-        <div className="af-class-column-10 w-col w-col-7">
+        <div className="af-class-column-9 w-col w-col-7">
           <img
             src="images/atomic-Svg.svg"
             loading="lazy"
